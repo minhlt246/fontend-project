@@ -1,0 +1,62 @@
+extends _layouts/master
+
+block content
+    section
+        ul.nav.nav-pills.my-4.blog-tags.justify-content-around(role='tablist')
+            li.nav-item(role='presentation')
+                button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#home' type='button' role='tab' aria-selected='true') Nhẫn
+            li.nav-item(role='presentation')
+                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Chuyền
+            li.nav-item(role='presentation')
+                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#transaction' type='button' role='tab' aria-selected='false' tabindex='-1') Lăc tay
+            li.nav-item(role='presentation')
+                button.nav-link.py-lg-3.border-0(data-bs-toggle='pill' data-bs-target='#level' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Lưng
+            li.nav-item(role='presentation')
+                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#matching' type='button' role='tab' aria-selected='false' tabindex='-1') Mặt Dây Chuyền
+            li.nav-item(role='presentation')
+                button.nav-link.py-lg-3.border-0(data-bs-toggle='pill' data-bs-target='#rank' type='button' role='tab' aria-selected='false' tabindex='-1') Phụ Kiện
+        #carouselExampleIndicator.carousel.slide(data-bs-ride='carousel')
+            .carousel-indicators
+                button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+                button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+            .carousel-inner
+                .carousel-item.active
+                    img.d-block.w-100.carousel-img(src='client/images/banner-1.jpg')
+
+                .carousel-item
+                    img.d-block.w-100(src='client/images/banner-1.jpg')
+                .carousel-item
+                    img.d-block.w-100(src='client/images/banner-1.jpg')
+            button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.visually-hidden Previous
+            button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.visually-hidden Next
+        .container
+            .tab-content.my-5
+                .text-center.justify-content-center.mb-4.mb-lg-5
+                    .page-title.wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.3s')
+                        h1.text-center.service-title.color-titlel.mb-2 Top Sản Phẩm Được Yêu Thích Nhất
+                        .fs-5.text-center.service-title.justify-content-center
+                            |   Những sản phẩm được thiết kế riêng biệt giúp nâng tầm phong cách của phái mạnh.
+                #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
+                      .categories.mt-4
+                          .responsive
+                                .row
+                                    - for (var i = 0; i < 8; ++i)
+
+                                        .col-lg-3.col-md-6
+                                            .card(style='').categories-product-card
+                                                  .card-body
+                                                      img.card-img-top.categories-product(src='client/images/product-0.jpeg' alt='...')
+                                                      h5.card-title Khuyên tai bạc
+                                                      p.card-text
+                                                          | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                                                      p.text-price 799,000 vnđ
+                                                      a.btn.btn-primary(href='#') Mua Ngay
+
+
+                #trade.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
+                    .row

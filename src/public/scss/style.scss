@@ -356,16 +356,6 @@ header {
   }
 }
 section {
-  .title {
-    font-size: 2.67em;
-    font-weight: 700;
-    color: $color-active;
-    line-height: 1.15em;
-    @include sm {
-      font-size: 26px;
-    }
-  }
-
   .team-box {
     .team-content {
       margin-top: 140px;
@@ -593,6 +583,7 @@ section {
       }
     }
   }
+
   .shirt{
     .shirt-new{
       .shirt-new-product{
@@ -623,6 +614,65 @@ section {
         }
       }
     }
+  }
+  .overview{
+    .overview-tags {
+      background: #0F2034;
+      border-radius: 15px;
+      @include sm {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+      }
+
+      .nav-item {
+        .nav-link {
+          border-radius: 0;
+          background: transparent;
+          border-right: 1px solid #707070;
+          color: #fff;
+          font-size: 20px;
+        }
+        .active{
+          color:  #0BB94E;
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+    }
+    .tab-content{
+      .overview-item{
+        display: flex;
+        justify-content: space-between;
+        .overview-block {
+          background:#102034;
+          border-radius: 20px;
+          width: 100%;
+        }
+      }
+
+      .overview-tags-right{
+        .nav-item{
+          .nav-link {
+            color: #fff;
+            font-size: 15px;
+            font-weight: lighter;
+            text-transform:uppercase;
+          }
+          .active{
+            background: none;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  .categories{
+    .categories-product-card{
+      .categories-product{
+
+      }
+    }
+
   }
   footer {
 

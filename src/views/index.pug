@@ -2,6 +2,7 @@ extends _layouts/master
 
 block content
     section
+
         #carouselExampleIndicator.carousel.slide(data-bs-ride='carousel')
             .carousel-indicators
                 button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
@@ -83,7 +84,7 @@ block content
                                 .col-lg-3.col-md-4.col-sm-6
                                     .featured-item.mb-4
                                         .featured-item-pic.set-bg(data-setbg)
-                                            img(src="client/images/featured/feature-"+ i + ".jpg")
+                                            img(src="client/images/featured/feature-"+ i + ".jpeg")
                                             ul.featured-item-pic-hover
                                                 li.featured-item-list
                                                     a(href='#')
@@ -169,7 +170,6 @@ block content
                     .col-lg-6
                         .road-content
                             .responsive
-
                                     - for (var i = 0; i < 8; ++i)
                                         .col-lg-4
                                             .px-0.wow.flipInX(data-wow-delay="0.5s" data-wow-duration="0.9s")
