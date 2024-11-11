@@ -2,7 +2,7 @@ extends _layouts/master
 
 block content
     section
-        ul.nav.nav-pills.my-4.blog-tags.justify-content-around(role='tablist')
+        ul.nav.nav-pills.blog-tags.justify-content-around(role='tablist')
             li.nav-item(role='presentation')
                 button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#home' type='button' role='tab' aria-selected='true') Nhẫn
             li.nav-item(role='presentation')
@@ -42,21 +42,19 @@ block content
                         .fs-5.text-center.service-title.justify-content-center
                             |   Những sản phẩm được thiết kế riêng biệt giúp nâng tầm phong cách của phái mạnh.
                 #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
-                      .categories.mt-4
-                          .responsive
-                                .row
+                    .mt-4
+                        .row
+                            .responsive
                                     - for (var i = 0; i < 8; ++i)
-
-                                        .col-lg-3.col-md-6
-                                            .card(style='').categories-product-card
-                                                  .card-body
-                                                      img.card-img-top.categories-product(src='client/images/product-0.jpeg' alt='...')
-                                                      h5.card-title Khuyên tai bạc
-                                                      p.card-text
-                                                          | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-                                                      p.text-price 799,000 vnđ
-                                                      a.btn.btn-primary(href='#') Mua Ngay
-
+                                        .col-lg-4.col-md-6
+                                            .card.categories-product-card
+                                                .card-body
+                                                    img.card-img-top.categories-product(src='client/images/product-0.jpeg' alt='...')
+                                                    h5.card-title Khuyên tai bạc
+                                                    p.card-text
+                                                        | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                                                    p.text-price 799,000 vnđ
+                                                    a.btn.btn-primary(href='#') Mua Ngay
 
                 #trade.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
                     .row
