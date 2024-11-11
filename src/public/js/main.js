@@ -288,3 +288,48 @@ $.fn.extend({
 
 //Initialization of treeviews
 $('#tree1').treed();
+
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const stars = document.querySelectorAll(".star");
+  const ratingDisplay = document.getElementById("rating-display");
+
+  stars.forEach((star) => {
+    star.addEventListener("click", function () {
+      const rating = this.getAttribute("data-value");
+      updateRating(rating);
+    });
+
+    star.addEventListener("mouseover", function () {
+      highlightStars(this.getAttribute("data-value"));
+    });
+
+    star.addEventListener("mouseout", function () {
+      resetStars();
+    });
+  });
+
+  function updateRating(rating) {
+    stars.forEach((star) => {
+      star.classList.remove("selected");
+      if (star.getAttribute("data-value") <= rating) {
+        star.classList.add("selected");
+      }
+    });
+    ratingDisplay.innerText = `Rating: ${rating}`;
+  }
+
+  function highlightStars(rating) {
+    stars.forEach((star) => {
+      star.style.color = star.getAttribute("data-value") <= rating ? "gold" : "lightgray";
+    });
+  }
+
+  function resetStars() {
+    stars.forEach((star) => {
+      star.style.color = star.classList.contains("selected") ? "gold" : "lightgray";
+    });
+  }
+});
+
+

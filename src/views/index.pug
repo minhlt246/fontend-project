@@ -108,7 +108,7 @@ block content
                         .col-lg-4.col-md-4.col-sm-6
                             .blog-item
                                 .blog-item-pic
-                                    img(src='client/images/blog/blog-1.jpg' alt='')
+                                    img.w-100(src='client/images/blog/blog-1.png' alt='')
                                 .blog-item-text
                                     .d-flex.text-start
                                         p.mb-0
@@ -124,7 +124,7 @@ block content
                         .col-lg-4.col-md-4.col-sm-6
                             .blog-item
                                 .blog-item-pic
-                                    img(src='client/images/blog/blog-2.jpg' alt='')
+                                    img.w-100(src='client/images/blog/blog-2.png' alt='')
                                 .blog-item-text
                                     .d-flex.text-start
                                         p.mb-0
@@ -140,7 +140,7 @@ block content
                         .col-lg-4.col-md-4.col-sm-6
                             .blog-item
                                 .blog-item-pic
-                                    img(src='client/images/blog/blog-3.jpg' alt='')
+                                    img.w-100(src='client/images/blog/blog-3.png' alt='')
                                 .blog-item-text
                                     .d-flex.text-start
                                         p.mb-0
@@ -153,5 +153,75 @@ block content
                                         a(href='#') Visit the clean farm in the US
                                     p
                                         | Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat
+        #ecosystem.news
+            .container
+                .text-center.justify-content-center.mb-4.mb-lg-5
+                    .page-title.wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.3s')
+                        h1.text-center.service-title.color-titlel.mb-2 Top Sản Phẩm Được Yêu Thích Nhất
+                        .fs-5.text-center.service-title.justify-content-center
+                            |   Những sản phẩm được thiết kế riêng biệt giúp nâng tầm phong cách của phái mạnh.
 
+                .row
+                    .col-md-8.col-lg-6.mx-auto.wow.fadeInLeft(data-wow-delay='0.3s' data-wow-duration='0.5s')
+                        .new-img-block
+                            img.w-100(src='client/images/product-love-1.png')
+
+                    .col-lg-6
+                        .road-content
+                            .responsive
+
+                                    - for (var i = 0; i < 8; ++i)
+                                        .col-lg-4
+                                            .px-0.wow.flipInX(data-wow-delay="0.5s" data-wow-duration="0.9s")
+                                                .we-did-block
+                                                    img.w-100.block-img(src="client/images/love-product-" +i+".jpeg" alt='...')
+                                                    .we-did-content
+                                                        .w-100.text-center
+                                                            .h6.text-center.mb-3 Traditional advertisins
+                                                                br
+                                                                | does not work well anymore.
+                                                            .text-center
+                                                                small December 29, 2022
+        #shirt.shirt.my-5.pb-4
+                .shirt-new
+                    .container
+                        .wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.3s')
+                            .justify-content-center.my-5.w-100
+                                .text-center.justify-content-center.mb-2
+                                    .page-title
+                                        h1.text-center.service-title.text-uppercase.color-titlel Sản Phẩm Mới Trend
+                                        .fs-5.text-center.service-title.text-uppercase.text-while.justify-content-center
+                                            |   Meet of Professionals
+                        .row
+                            .col-sm-4.col-lg-4
+                                .shirt-new-product
+                                    a(href='').product-roll
+                                        img.shirt-img.w-100(data-sizes='auto' src='client/images/love-product-1.jpeg' data-src='' alt='Áo Sơ Mi' )
+                                .shirt-img-Home.align-items-center.text-start
+                                    h2
+                                        a(href='' target='_self')  Shirt
+                                    a.shirt-img-View.btn-buy(href='' target='_self')
+                                        | Xem
+                                        | Chi Tiet
+                            .col-sm-4.col-lg-4
+                                .shirt-new-product
+                                    a(href='').product-roll
+                                        img.shirt-img.w-100(data-sizes='auto' src='client/images/love-product-1.jpeg' data-src='' alt='Áo Sơ Mi' )
+                                .shirt-img-Home.align-items-center.text-start
+                                    h2
+                                        a(href='' target='_self')  Shirt
+                                    a.shirt-img-View.btn-buy(href='' target='_self')
+                                        | Xem
+                                        | Chi Tiet
+
+                            .col-sm-4.col-lg-4
+                                .shirt-new-product
+                                    .product-roll
+                                        img.shirt-img.w-100(data-sizes='auto' src='client/images/love-product-1.jpeg' data-src='' alt='Áo Sơ Mi' )
+                                .shirt-img-Home.align-items-center.text-start
+                                    h2
+                                        |  Shirt
+                                    a.shirt-img-View.btn-buy(href='' target='_self')
+                                        | Xem
+                                        | Chi Tiet
 

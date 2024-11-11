@@ -11,9 +11,10 @@ $color-page: #607290;
 $color-page2: #1aafe9;
 $color-active: #DF6951;
 
-$bnt-radiant: linear-gradient(to right, #ADFF39, #FFFA3B);
+
 $btn-oder:#DF6951;
 $border-color_1: #7fad39;
+$bnt-buy :#FF9999;
 /* media size */
 $mobile-mini-width: 320px;
 $mobile-width: 480px;
@@ -93,6 +94,17 @@ button:focus:not(:focus-visible) {
 
 .btn-submit{
  background:  $btn-oder;
+  &:hover{
+    background: #20bfe1;
+  }
+}
+.btn-buy{
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  background: $bnt-buy;
+  font-size: 20px;
+  padding: 10px;
+  color: #ffffff;
   &:hover{
     background: #20bfe1;
   }
@@ -344,18 +356,6 @@ header {
   }
 }
 section {
-  //.carousel{
-  //  .carousel-inner{
-  //    .carousel-img{
-  //      position: relative;
-  //      .carouse-content{
-  //        position: absolute;
-  //        z-index: 3;
-  //      }
-  //    }
-  //
-  //  }
-  //}
   .title {
     font-size: 2.67em;
     font-weight: 700;
@@ -427,8 +427,6 @@ section {
       border-top: 1px groove #542882;
     }
   }
-
-
 
   .featured {
     padding-top: 80px;
@@ -561,13 +559,77 @@ section {
     }
   }
 
+  .road-content{
+    background: #2b2f32;
+    padding: 20px;
+    height: 100%;
+    .we-did-block{
+      position: relative;
+
+      .block-img{
+        height:280px;
+        margin-top: 20px;
+      }
+      .we-did-content{
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        top: 50%;
+        left: 50%;
+        background: rgba(244, 235, 192, 0.8);
+        transition: 0.3s ease-in-out;
+        transform: translateX(-50%) translateY(-50%);
+        color: #444444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      &:hover{
+        .we-did-content{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .shirt{
+    .shirt-new{
+      .shirt-new-product{
+        .product-roll{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          border: 1px solid #f0f0f0;
+          &:before{
+            transform: scale(0, 1);
+            border-left-color: transparent;
+            border-right-color: transparent;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+          }
+          &:after{
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            -ms-transform: scale(1, 0);
+            transform: scale(1, 0);
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
   footer {
-    background-image: url(../images/footer_bg.jpg);
+
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
-
     .socical-group {
       .socical-box {
         width: 50px;
@@ -579,7 +641,6 @@ section {
         justify-content: center;
         align-items: center;
         color: $color-page;
-
         &:hover {
           border-color: $color-active;
           color: $color-active;
