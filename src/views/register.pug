@@ -1,0 +1,74 @@
+extends _layouts/master
+
+block content
+    section
+        .register
+            .register-form.align-items-center.d-flex.w-100.h-100
+                .register-main.py-5
+                    form.form.p-4
+                        .mb-2.fw-bold.form-title.text-center Dang ki
+                        .form-text.text-center.mb-3.text-danger We'll never share your information with anyone else.
+
+                        .input-group.mb-3
+                            input.form-control(type='text' placeholder='Your First Name' aria-label='First Name' required='')
+                        .input-group.mb-3
+                            input.form-control(type='text' placeholder='Your Last Name' aria-label='Last Name' required='')
+
+                        .input-group.mb-3
+                            span.input-group-text
+                                i.fa-solid.fa-user
+                            input.form-control(type='text' placeholder='Your Username' aria-label='Username' required='')
+
+                        .input-group.mb-3
+                            select#inputGroupSelect01.form-select.form-control
+                                option(selected='') United  Started (US)
+                                option(value='1') England (UK)
+                                option(value='2') VieNam (VN)
+                                option(value='3') THAILAND (TH)
+
+                        .input-group.mb-3
+                            select#inputGroupSelect02.form-select.form-control
+                                option(selected='') Armed  Forces  (AA)
+                                option(value='1') England (UK)
+                                option(value='2') VieNam (VN)
+                                option(value='3') THAILAND (TH)
+
+                        .input-group.mb-3
+                            span.input-group-text
+                                i.fa-solid.fa-envelope
+                            input#exampleInputEmail1.form-control(type='email' placeholder='Your Email Address' aria-describedby='emailHelp' required='')
+
+                        .input-group.mb-3
+                            span.input-group-text
+                                i.fa-solid.fa-lock
+                            input.form-control(type='password' placeholder='Password' aria-label='Password' required='')
+                            span.input-group-text
+                                button.btn.p-0.border-0(type='button')
+                                    i.fa-regular.fa-eye
+
+                        .input-group.mb-3
+                            span.input-group-text
+                                i.fa-solid.fa-lock
+                            input.form-control(type='password' placeholder='Confirm Password' aria-label='Confirm Password' required='')
+                            span.input-group-text
+                                button.btn.p-0.border-0(type='button')
+                                    i.fa-regular.fa-eye
+
+                        .mb-3.form-check.text-start.fs-5
+                            input#terms.form-check-input(type='checkbox' required='')
+                            label.form-check-label(for='terms').fs-5
+                                | I agree to the
+                                a.text-decoration-underline.px-3(href='#') terms and conditions
+
+                        .mb-3.form-check.text-start
+                            input#newsletter.form-check-input(type='checkbox')
+                            label.form-check-label.fs-5(for='newsletter') Subscribe to our newsletter
+
+                        .mb-3.form-check.text-start
+                            input#updates.form-check-input(type='checkbox')
+                            label.form-check-label.fs-5.text-start(for='updates') Receive updates via email
+
+
+                        .d-flex.justify-content-between
+                            button.btn.btn-cancel(type='button') Cancel
+                            button.btn.btn-start(type='submit') Register

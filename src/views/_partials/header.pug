@@ -1,37 +1,29 @@
 header
-    nav.navbar.navbar-expand-lg
-        .container-fluid.px-lg-5.py-2
-            a.navbar-brand(href='index.html')
-                img.img-logo(src='client/images/logo.png' style='width:40px')
+    nav.navbar.navbar-expand-lg.menu
+        .container
+            a.navbar-brand(href='#')
+                img.img-logo(src='./client/images/logo.png')
+            button.navbar-toggler.border-0(type='button' data-bs-toggle='offcanvas' data-bs-target='#menu' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
             #menu.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
                 .offcanvas-header
                     .offcanvas-title
-                        img(src='client/images/logo.png')
+                        img.img-logo(src='./client/images/logo.png')
                     button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
-                        i.fa-solid.fa-times.text-light
-                .offcanvas-body.justify-content-center
-                    ul.navbar-nav.mb-2.mb-lg-0.menu.align-items-center
-                        li.nav-item
-                            .input-group
-                                span.input-group-text
-                                    i.fa-solid.fa-lock
-                                input.form-control(type='text' placeholder='Tìm Kiếm ' aria-label='Password' required='')
-                                span.input-group-text.border-start.my-1
-                                    a(href='') Tìm Kiếm
-                        li.nav-item
-                            a.nav-link(href='index.html') Dịch Vụ
-                        li.nav-item
-                            a.nav-link(href='javascript:void(0)' )
-                                | Sản Phẩm
-                        li.nav-item
-                            a.nav-link(href='javascript:void(0)' )
-                                | Tin Tức
-                        li.nav-item
-                            a.nav-link(href='product.html') Hỗ Trợ
-                        li.nav-item
-                            a.nav-link(href='blog.html') Giới Thiệu
-            .d-grid.gap-2.d-md-flex.justify-content-md-end.mx-3
-                button.btn.btn-primary.me-md-2(type='button') Đăng  Kí
-                button.btn.btn-primary(type='button') Đăng Nhập
-            a(href='').me-2.fs-3.text-dark
-                i.fa-solid.fa-cart-shopping
+                .offcanvas-body
+                    ul.navbar-nav.justify-content-center.flex-grow-1.pe-3.text-uppercase
+                        li.nav-item.mx-lg-4
+                            a.nav-link(href='index.html') Trang Chủ
+                        li.nav-item.mx-lg-4
+                            a.nav-link(href='product.html') Sản Phẩmn
+                        li.nav-item.mx-lg-4
+                            a.nav-link(href='system.html') Tin tức
+                        li.nav-item.mx-lg-4
+                            a.nav-link(href='overview.html') Giới thiệu
+                        li.nav-item.mx-lg-4
+                            a.nav-link(href='contact.html') Liên Hệ
+
+                    .d-grid.gap-2.d-md-flex.justify-content-md-end
+                        a.btn.btn-primary.me-md-2(type='button' href='register.html') Đăng KÍ
+                        a.btn.btn-primary(type='button' href='Login.html') ĐĂng Nhập
+

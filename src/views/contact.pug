@@ -1,0 +1,62 @@
+extends _layouts/master
+
+block content
+    section
+        .contact
+            .header-content
+                .contact-title.w-100.text-center
+                    h3.text-white.fw-bold
+                        span.text-primary Home
+                        span.mx-2 /
+                        span.text-highline Blog
+            .contact.spad.my-5
+                .container
+                    .row
+                        .col-lg-3.col-md-3.col-sm-6.text-center
+                            .contact-profile
+                                span.icon_phone
+                                    i.fa-solid.fa-phone
+                                h4  Điện Thoại
+                                p +84-000-000-676
+                        .col-lg-3.col-md-3.col-sm-6.text-center
+                            .contact-profile
+                                span.icon_pin_alt
+                                    i.fa-solid.fa-location-dot
+                                h4 Địa Chỉ ;
+                                p Quận 12 - TP.HCM
+                        .col-lg-3.col-md-3.col-sm-6.text-center
+                            .contact-profile
+                                span.icon_clock_alt
+                                    i.fa-regular.fa-clock
+                                h4 Thơi Gian
+                                p 10:00 am to 22:00 pm
+                        .col-lg-3.col-md-3.col-sm-6.text-center
+                            .contact-profile
+                                span.icon_mail_alt
+                                    i.fa-regular.fa-envelope
+                                h4 Email
+                                p team7@gmail.com
+            .contact-form.spad.mb-4
+                .container
+                    .row
+                        .col-lg-12
+                            .contact-form-title
+                                h2.text-black LIen He
+                        form(action='' method='post')
+                                .row
+                                    .col-lg-6
+
+                                        input(required='' name='name' type='text' placeholder='Họ tên*')
+
+                                    .col-lg-6
+
+                                        input(required='' name='phone' type='tel' placeholder='Số điện thoại*')
+
+                                        input.w-100(required='' name='email' type='email' placeholder='Email')
+
+                                        textarea(required='' name='content' placeholder='Nội dung*')
+
+                                .col-lg-12.text-center
+                                    input(type='hidden' name='page' value='contact-page')
+                                    button.site-btn(type='submit') Gửi
+

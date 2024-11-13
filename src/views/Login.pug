@@ -1,0 +1,30 @@
+extends _layouts/master
+
+block content
+    section
+        .login
+            .login-form.py-4.align-items-center.d-flex.w-100.h-100
+                .login-main
+                    form.form.p-4
+                        h4.mb-0.fw-bold.form-title.text-center Đăng nhập
+                        .mb-3.text-center.text-danger Nhập tài khoản và mật khẩu để đăng nhập hệ thống
+
+                        label.form-label Email address
+                        .input-group.mb-3.input-group-lg
+                            span.input-group-text
+                                i.fa-solid.fa-envelope
+                            input.form-control(type='email' aria-describedby='emailHelp' placeholder='Your email')
+
+                        label.form-label Password
+                        .input-group.mb-3.input-group-lg
+                            span.input-group-text
+                                i.fa-solid.fa-lock
+                            input.form-control(type='password' placeholder='Password' aria-label='Username' aria-describedby='basic-addon1' required)
+                            span.input-group-text.px-0
+                                button.btn.px-2.border-0(type='button')
+                                    i.fa-regular.fa-eye.fs-5
+
+                        .mb-3.form-check.text-center
+                            a.text-light.text-decoration-underline(href='javascritp:void(0)') For Got Password?
+                        a.btn.btn-start.w-100(href='')
+                            |  Sign in
