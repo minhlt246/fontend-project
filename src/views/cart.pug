@@ -5,7 +5,7 @@ block content
         .cart.my-lg-4
             .container
                 .checkout-form
-                    h4 Chi Tiết Giỏ Hàng
+                    h4.mb-3 Chi Tiết Giỏ Hàng
 
                 .row
                     .col-lg-12
@@ -22,17 +22,17 @@ block content
                                     tbody
                                         - for (var i = 0; i < 4; i++)
                                             tr
-                                                td.py-3.w-25
+                                                td.py-3.table-img
                                                     img.w-100(src='client/images/product-love-1.png')
                                                 td.py-3.text-center.text-highline-2.fw-bold 3000k
                                                 td.py-3.text-center.text-highline-2 Giao Hang som
                                                 td.py-3.text-center.text-highline-2 11g20p
                 .row
                     .col-lg-12
-                        .shoping-cart-btns
-                            a.primary-btn.cart-btn Tiếp Tuc Mua Hàng
-                            button.cart-update.primary-btn.cart-btn.cart-btn-right(disabled='')
-                                | C&#x1EAD;p nh&#x1EAD;t gi&#x1ECF; h&agrave;ng
+                        .shoping-cart-btns.d-flex.justify-content-between
+                            a.primary-btn.cart-btn Tiếp Tục Mua Hàng
+                            button.cart-update.primary-btn.p-3
+                                | Cập Nhật Đơn Hàng
                     .col-lg-6
                     .col-lg-6
                         .shoping-checkout
@@ -40,6 +40,6 @@ block content
                             ul
                                 // <li>Subtotal <span>$454.98</span></li>
                                 li
-                                    | T&#x1ED5;ng c&#x1ED9;ng
-                                    span.cart-subtotal 15.000&nbsp;&dstrok;
+                                    | Tổng cộng
+                                    span.cart-subtotal 115.000k;
                             a.primary-btn(href='checkout.html') THANH TOÁN

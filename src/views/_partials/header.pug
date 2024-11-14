@@ -11,19 +11,24 @@ header.mb-5
                         img.img-logo(src='./client/images/logo.png')
                     button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
                 .offcanvas-body
-                    ul.navbar-nav.justify-content-center.flex-grow-1.pe-3.text-uppercase
-                        li.nav-item.mx-lg-4
+                    ul.navbar-nav.pe-3.text-uppercase.justify-content-between
+                        li.nav-item
+                            .input-group
+                                span.input-group-text
+                                    i.fa-solid.fa-envelope
+                                input#exampleInputEmail1.form-control(type='email' placeholder='Serch' aria-describedby='emailHelp' required='')
+                        li.nav-item
                             a.nav-link(href='index.html') Trang Chủ
-                        li.nav-item.mx-lg-4
+                        li.nav-item
                             a.nav-link(href='product.html') Sản Phẩmn
-                        li.nav-item.mx-lg-4
+                        li.nav-item
                             a.nav-link(href='system.html') Tin tức
-                        li.nav-item.mx-lg-4
+                        li.nav-item
                             a.nav-link(href='overview.html') Giới thiệu
-                        li.nav-item.mx-lg-4
+                        li.nav-item
                             a.nav-link(href='contact.html') Liên Hệ
 
                     .d-grid.gap-2.d-md-flex.justify-content-md-end
-                        a.btn.btn-primary.me-md-2(type='button' href='register.html') Đăng KÍ
-                        a.btn.btn-primary(type='button' href='Login.html') ĐĂng Nhập
+                        a.btn.btn-primary.me-md-2.btn-log(type='button' href='register.html') Đăng KÍ
+                        a.btn.btn-primary.btn-reg(type='button' href='Login.html') ĐĂng Nhập
 
