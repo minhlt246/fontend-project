@@ -1,0 +1,45 @@
+extends _layouts/master
+
+block content
+    section
+        .cart.my-lg-4
+            .container
+                .checkout-form
+                    h4 Chi Tiết Giỏ Hàng
+
+                .row
+                    .col-lg-12
+                        .shoping-cart-table.mb-5.rounded-4.p-3.bg-box
+                            .table-responsive
+                                table.table.mb-0.table-borderless
+                                    thead
+                                        thead
+                                            tr
+                                                th(scope='col').fw-lighter.text-white.text-uppercase BTN
+                                                th(scope='col').text-center.fw-lighter.text-white.text-uppercase Amount
+                                                th(scope='col').text-center.fw-lighter.text-white.text-uppercase Note
+                                                th(scope='col').text-center.fw-lighter.text-white.text-uppercase Time
+                                    tbody
+                                        - for (var i = 0; i < 4; i++)
+                                            tr
+                                                td.py-3.w-25
+                                                    img.w-100(src='client/images/product-love-1.png')
+                                                td.py-3.text-center.text-highline-2.fw-bold 3000k
+                                                td.py-3.text-center.text-highline-2 Giao Hang som
+                                                td.py-3.text-center.text-highline-2 11g20p
+                .row
+                    .col-lg-12
+                        .shoping-cart-btns
+                            a.primary-btn.cart-btn Tiếp Tuc Mua Hàng
+                            button.cart-update.primary-btn.cart-btn.cart-btn-right(disabled='')
+                                | C&#x1EAD;p nh&#x1EAD;t gi&#x1ECF; h&agrave;ng
+                    .col-lg-6
+                    .col-lg-6
+                        .shoping-checkout
+                            h5 Giá trị giỏ hàng
+                            ul
+                                // <li>Subtotal <span>$454.98</span></li>
+                                li
+                                    | T&#x1ED5;ng c&#x1ED9;ng
+                                    span.cart-subtotal 15.000&nbsp;&dstrok;
+                            a.primary-btn(href='checkout.html') THANH TOÁN
