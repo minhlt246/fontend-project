@@ -1,0 +1,163 @@
+extends _layouts/master
+
+block content
+    section
+        .check-out
+            .container
+                ol.breadcrumb.py-4.fs-6
+                    li.breadcrumb-item
+                        a(href='#') Home
+                    li.breadcrumb-item
+                        a(href='#') PH&#x1EE4; KI&#x1EC6;N MOD
+                    li.breadcrumb-item
+                        a(href='#') DECAL
+                    li.breadcrumb-item.active.css-ilends(aria-current='page')
+                        p DUNG DỊCH MÔ HÌNH MR.HOBBY - DUNG DỊCH HỖ TRỢ DECAL NƯỚC
+
+                .checkout-form
+                    h4 Thông Tin Giao Hàng
+                    form(action='xac-nhan' method='post')
+                        .row
+                            .col-lg-8.col-md-6
+                                .row
+                                    .col-lg-6   
+                                        .checkout-input.mb-5
+                                            label
+                                                | Họ Tên ;
+                                                span *
+                                            input(required='' name='name' type='text' value='')
+                                            // <p class='hidden text-danger'>Mã giảm giá không hợp lệ</p>
+                                    .col-lg-6
+                                        .checkout-input.mb-5
+                                            label
+                                                | Số điện thoại;
+                                                span *
+                                            input(required='' name='phone' type='text' value='')
+                                    .checkout-input
+                                        label Email
+                                        input(name='email' type='email' value='')
+                                .checkout-input
+                                    label
+                                        | Địa chỉ*;
+                                        span *
+                                        span.label-note &nbsp;(S&#x1ED1; nh&agrave;, C&abreve;n h&#x1ED9;, T&ecirc;n &dstrok;&#x1B0;&#x1EDD;ng, ng&otilde;...)
+                                    input.checkout-input-add(required='' name='address' type='text' value='')
+                                    // <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
+                                .checkout-input
+                                    label
+                                        | Tỉnh/Thành phố ;
+                                        span *
+                                    select(required='' name='province')
+                                        option(value='' hidden='') Ch&#x1ECD;n th&agrave;nh ph&#x1ED1;
+                                        option(value='thanh-pho-can-tho') Th&agrave;nh ph&#x1ED1; C&#x1EA7;n Th&#x1A1;
+                                        option(value='thanh-pho-ha-noi') Th&agrave;nh ph&#x1ED1; H&agrave; N&#x1ED9;i
+                                        option(value='thanh-pho-hai-phong') Th&agrave;nh ph&#x1ED1; H&#x1EA3;i Ph&ograve;ng
+                                        option(value='thanh-pho-ho-chi-minh') Th&agrave;nh ph&#x1ED1; H&#x1ED3; Ch&iacute; Minh
+                                        option(value='thanh-pho-da-nang') Th&agrave;nh ph&#x1ED1; &Dstrok;&agrave; N&#x1EB5;ng
+                                        option(value='tinh-an-giang') T&#x1EC9;nh An Giang
+                                        option(value='tinh-ba-ria---vung-tau') T&#x1EC9;nh B&agrave; R&#x1ECB;a - V&utilde;ng T&agrave;u
+                                        option(value='tinh-bac-giang') T&#x1EC9;nh B&#x1EAF;c Giang
+                                        option(value='tinh-bac-kan') T&#x1EC9;nh B&#x1EAF;c K&#x1EA1;n
+                                        option(value='tinh-bac-lieu') T&#x1EC9;nh B&#x1EA1;c Li&ecirc;u
+                                        option(value='tinh-bac-ninh') T&#x1EC9;nh B&#x1EAF;c Ninh
+                                        option(value='tinh-ben-tre') T&#x1EC9;nh B&#x1EBF;n Tre
+                                        option(value='tinh-binh-duong') T&#x1EC9;nh B&igrave;nh D&#x1B0;&#x1A1;ng
+                                        option(value='tinh-binh-phuoc') T&#x1EC9;nh B&igrave;nh Ph&#x1B0;&#x1EDB;c
+                                        option(value='tinh-binh-thuan') T&#x1EC9;nh B&igrave;nh Thu&#x1EAD;n
+                                        option(value='tinh-binh-dinh') T&#x1EC9;nh B&igrave;nh &Dstrok;&#x1ECB;nh
+                                        option(value='tinh-ca-mau') T&#x1EC9;nh C&agrave; Mau
+                                        option(value='tinh-cao-bang') T&#x1EC9;nh Cao B&#x1EB1;ng
+                                        option(value='tinh-gia-lai') T&#x1EC9;nh Gia Lai
+                                        option(value='tinh-ha-giang') T&#x1EC9;nh H&agrave; Giang
+                                        option(value='tinh-ha-nam') T&#x1EC9;nh H&agrave; Nam
+                                        option(value='tinh-ha-tinh') T&#x1EC9;nh H&agrave; T&itilde;nh
+                                        option(value='tinh-hai-duong') T&#x1EC9;nh H&#x1EA3;i D&#x1B0;&#x1A1;ng
+                                        option(value='tinh-hau-giang') T&#x1EC9;nh H&#x1EAD;u Giang
+                                        option(value='tinh-hoa-binh') T&#x1EC9;nh Ho&agrave; B&igrave;nh
+                                        option(value='tinh-hung-yen') T&#x1EC9;nh H&#x1B0;ng Y&ecirc;n
+                                        option(value='tinh-khanh-hoa') T&#x1EC9;nh Kh&aacute;nh H&ograve;a
+                                        option(value='tinh-kien-giang') T&#x1EC9;nh Ki&ecirc;n Giang
+                                        option(value='tinh-kon-tum') T&#x1EC9;nh Kon Tum
+                                        option(value='tinh-lai-chau') T&#x1EC9;nh Lai Ch&acirc;u
+                                        option(value='tinh-lam-dong') T&#x1EC9;nh L&acirc;m &Dstrok;&#x1ED3;ng
+                                        option(value='tinh-lang-son') T&#x1EC9;nh L&#x1EA1;ng S&#x1A1;n
+                                        option(value='tinh-lao-cai') T&#x1EC9;nh L&agrave;o Cai
+                                        option(value='tinh-long-an') T&#x1EC9;nh Long An
+                                        option(value='tinh-nam-dinh') T&#x1EC9;nh Nam &Dstrok;&#x1ECB;nh
+                                        option(value='tinh-nghe-an') T&#x1EC9;nh Ngh&#x1EC7; An
+                                        option(value='tinh-ninh-binh') T&#x1EC9;nh Ninh B&igrave;nh
+                                        option(value='tinh-ninh-thuan') T&#x1EC9;nh Ninh Thu&#x1EAD;n
+                                        option(value='tinh-phu-tho') T&#x1EC9;nh Ph&uacute; Th&#x1ECD;
+                                        option(value='tinh-phu-yen') T&#x1EC9;nh Ph&uacute; Y&ecirc;n
+                                        option(value='tinh-quang-binh') T&#x1EC9;nh Qu&#x1EA3;ng B&igrave;nh
+                                        option(value='tinh-quang-nam') T&#x1EC9;nh Qu&#x1EA3;ng Nam
+                                        option(value='tinh-quang-ngai') T&#x1EC9;nh Qu&#x1EA3;ng Ng&atilde;i
+                                        option(value='tinh-quang-ninh') T&#x1EC9;nh Qu&#x1EA3;ng Ninh
+                                        option(value='tinh-quang-tri') T&#x1EC9;nh Qu&#x1EA3;ng Tr&#x1ECB;
+                                        option(value='tinh-soc-trang') T&#x1EC9;nh S&oacute;c Tr&abreve;ng
+                                        option(value='tinh-son-la') T&#x1EC9;nh S&#x1A1;n La
+                                        option(value='tinh-tay-ninh') T&#x1EC9;nh T&acirc;y Ninh
+                                        option(value='tinh-thai-binh') T&#x1EC9;nh Th&aacute;i B&igrave;nh
+                                        option(value='tinh-thai-nguyen') T&#x1EC9;nh Th&aacute;i Nguy&ecirc;n
+                                        option(value='tinh-thanh-hoa') T&#x1EC9;nh Thanh H&oacute;a
+                                        option(value='tinh-thua-thien-hue') T&#x1EC9;nh Th&#x1EEB;a Thi&ecirc;n Hu&#x1EBF;
+                                        option(value='tinh-tien-giang') T&#x1EC9;nh Ti&#x1EC1;n Giang
+                                        option(value='tinh-tra-vinh') T&#x1EC9;nh Tr&agrave; Vinh
+                                        option(value='tinh-tuyen-quang') T&#x1EC9;nh Tuy&ecirc;n Quang
+                                        option(value='tinh-vinh-long') T&#x1EC9;nh V&itilde;nh Long
+                                        option(value='tinh-vinh-phuc') T&#x1EC9;nh V&itilde;nh Ph&uacute;c
+                                        option(value='tinh-yen-bai') T&#x1EC9;nh Y&ecirc;n B&aacute;i
+                                        option(value='tinh-dak-lak') T&#x1EC9;nh &Dstrok;&#x1EAF;k L&#x1EAF;k
+                                        option(value='tinh-dak-nong') T&#x1EC9;nh &Dstrok;&#x1EAF;k N&ocirc;ng
+                                        option(value='tinh-dien-bien') T&#x1EC9;nh &Dstrok;i&#x1EC7;n Bi&ecirc;n
+                                        option(value='tinh-dong-nai') T&#x1EC9;nh &Dstrok;&#x1ED3;ng Nai
+                                        option(value='tinh-dong-thap') T&#x1EC9;nh &Dstrok;&#x1ED3;ng Th&aacute;p
+                                .checkout-input
+                                    label
+                                        | Quận/Huyện;
+                                        span *
+                                    select(required='' name='district')
+                                        option(hidden='') Chọn Quận/Huyện
+                                .checkout-input
+                                    p
+                                        | Phường/Xã;
+                                        span *
+                                    select(required='' name='ward')
+                                        option(value='' hidden='') Chọn Phường/Xã;
+                                .checkout-input
+                                    p Ghi chú ;
+                                    textarea(name='notes' id='' cols='30' rows='5')
+                            .col-lg-4.col-md-6
+                                .checkout-order.p-3.bg-light
+                                    h4.text-highline Giỏ hàng
+                                    .checkout-order-products.d-flex.justify-content-between.fw-bold.fs-5.mb-3
+                                        .text-highline Sản phẩm
+                                        span Thành tiền
+                                    ul
+                                        li
+                                            | Cải ngọt thủy canh VietGAP (300g)15.000 đ
+                                            span 15.000 &dstrok;
+                                    .checkout-order-subtotal.d-flex.justify-content-between.fw-bold.fs-5.mb-3
+                                        span.text-highline Tiền hàng
+
+                                        span 15.000
+                                    .checkout-order-shipping.d-flex.justify-content-between.fw-bold.fs-5.mb-3
+                                        span.text-highline Phí vận chuyển
+
+                                        span.delivery-fee 0
+                                    .checkout-order-discount.d-flex.justify-content-between.fw-bold.fs-5.mb-3
+                                        span.text-highline  Phí vận chuyển đ;
+
+                                        span.discount 0
+
+                                    .checkout-order-total.d-flex.justify-content-between.fw-bold.fs-5.mb-3
+                                        span.text-highline Tổng D
+
+                                        span.order_total 15.000
+                                    .shoping-continue
+                                        label.mb-3.text-highline.fw-bold.fs-5.mb-3 Mã giảm giá;
+                                        .input-group.mb-3
+                                            input.form-control(name='coupon' type='text' value='')
+                                            button.btn.btn-outline-secondary(name='coupon_submit') ÁP Dụng
+                                        .coupon-notification
+                                    button.site-btn.btn-submit.border-0.rounded-4.py-2.px-4(type='submit') Đặt Hàng
