@@ -1,7 +1,7 @@
-header.mb-5
-    nav.navbar.navbar-expand-lg.menu
-        .container
-            a.navbar-brand(href='#')
+header
+    nav.navbar.navbar-expand-lg.mx-lg-4
+        .container-fluid
+            a.navbar-brand(href='index.html')
                 img.img-logo(src='./client/images/logo.png')
             button.navbar-toggler.border-0(type='button' data-bs-toggle='offcanvas' data-bs-target='#menu' aria-controls='offcanvasNavbar' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
@@ -10,25 +10,29 @@ header.mb-5
                     .offcanvas-title
                         img.img-logo(src='./client/images/logo.png')
                     button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
-                .offcanvas-body
-                    ul.navbar-nav.pe-3.text-uppercase.justify-content-between
-                        li.nav-item
+                .offcanvas-body.align-items-center
+                    ul.navbar-nav.justify-content-center.flex-grow-1.pe-3.align-items-center
+                        li.nav-item.mx-lg-2
                             .input-group
                                 span.input-group-text
-                                    i.fa-solid.fa-envelope
+                                    i.fa-solid.fa-magnifying-glass
                                 input#exampleInputEmail1.form-control(type='email' placeholder='Serch' aria-describedby='emailHelp' required='')
-                        li.nav-item
+                                span.input-group-text
+                                    | Serch
+                        li.nav-item.mx-lg-2
                             a.nav-link(href='index.html') Trang Chủ
-                        li.nav-item
+                        li.nav-item.mx-lg-2
                             a.nav-link(href='product.html') Sản Phẩmn
-                        li.nav-item
-                            a.nav-link(href='system.html') Tin tức
-                        li.nav-item
-                            a.nav-link(href='overview.html') Giới thiệu
-                        li.nav-item
+                        li.nav-item.mx-lg-2
+                            a.nav-link(href='new-post.html') Tin tức
+                        li.nav-item.mx-lg-2
+                            a.nav-link(href='about-us.html') Giới thiệu
+                        li.nav-item.mx-lg-2
                             a.nav-link(href='contact.html') Liên Hệ
 
                     .d-grid.gap-2.d-md-flex.justify-content-md-end
                         a.btn.btn-primary.me-md-2.btn-log(type='button' href='register.html') Đăng KÍ
                         a.btn.btn-primary.btn-reg(type='button' href='Login.html') ĐĂng Nhập
 
+                    a(type='button' href='cart.html').text-black.fs-4.align-items-center.ms-3
+                        i.fa-solid.fa-cart-shopping

@@ -1,0 +1,35 @@
+extends _layouts/master
+
+block content
+    section
+        .new-post
+            .container
+                ol.breadcrumb.py-4.fs-6
+                    li.breadcrumb-item
+                        a(href='#') Home
+                    li.breadcrumb-item
+                        a(href='#') Điền thông tin
+                    li.breadcrumb-item
+                        a(href='#') Xác nhận
+                    li.breadcrumb-item.active.css-ilends(aria-current='page')
+                        p Hoàn tất đơn hàng
+
+                .row.gy-5
+                    - for (var i = 0; i < 8; ++i)
+                        .col-lg-4.col-md-6
+                            article
+                                .post-img
+                                    img.img-fluid(src='client/images/blog/blog-1.jpg' alt='')
+                                .meta-top
+                                    ul
+                                        li.d-flex.align-items-center
+                                            a(href='blog-details.html') Sorts
+                                        li.d-flex.align-items-center
+                                            i.bi.bi-dot
+                                            a(href='')
+                                                time(datetime='2022-01-01') Jan 1, 2022
+                                h2.title
+                                    a(href='') Dolorum optio tempore voluptas dignissimos
+
+
+

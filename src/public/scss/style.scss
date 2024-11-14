@@ -478,64 +478,79 @@ header {
   }
 
 section {
-  .team-box {
-    .team-content {
+  .product-box {
+    .product-content {
       margin-top: 140px;
-      .team-card {
-        background: #ffffff;
-        backdrop-filter: invert(80%);
-        color: $color_1;
-        border-radius: 10px;
-        width: 100%;
+      .product-card {
         .card-body {
-          width: 100%;
-          height: 100%;
-          text-align: left;
-          .team-people {
-            padding: 5px;
-            margin-top: -60px;
-            text-align: center;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            overflow: hidden;
-            background: #FFFFFF;
-            border: 1px solid #CCCCCC;
-            box-shadow: 2px 2px 1px #CCCCCC;
+          .card-img {
+            display: flex;
+            justify-content: center;
+            .product-img {
+              width: 100%;
+              max-width: 150px;
+              border-radius: 8px;
+            }
           }
-          .star {
-            color: $color_2;
-            cursor: pointer;
-            transition: color 0.2s;
-            &:hover {
-              color: $color_2;
-              ~ {
-                .star {
-                  color: $color_3;
-                }
+          .product-bg {
+            margin: 1rem 0;
+            img {
+              width: 25px;
+              height: 25px;
+            }
+          }
+          .text-start {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+          .star-rating {
+            span {
+              font-size: 1.2rem;
+              color: #FFD700;
+              cursor: pointer;
+              &:hover, &.selected {
+                color: #FFCC00;
               }
             }
           }
-
-          .star.selected {
-            color: $color_3;
+          .product-team {
+            display: flex;
+            align-items: center;
+            h4 {
+              color: #e74c3c;
+              font-weight: bold;
+            }
+            p {
+              color: #999;
+              margin-left: 0.5rem;
+              text-decoration: line-through;
+            }
           }
-
+          .btn-submit {
+            background-color: #007bff;
+            padding: 0.5rem 1rem;
+            border: none;
+            font-weight: bold;
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
         }
       }
     }
-
-    .team-img {
+    .product-img {
       width: 100%;
       height: auto;
+      object-fit: contain;
     }
-
-    .team-banner {
+    .product-banner {
       z-index: 1;
     }
-
-
-    .line-team {
+    .product-team {
       border-top: 1px groove #542882;
     }
   }
@@ -782,6 +797,7 @@ section {
     }
 
   }
+
   .contact{
     .header-content{
       margin-top: 30px;
@@ -866,6 +882,7 @@ section {
     }
 
   }
+
   .detail{
     .css-backgroud{
       padding-top: 16px;
@@ -874,6 +891,7 @@ section {
       max-width: 1270px;
     }
   }
+
   .login{
     background: url(../images/login_background.png);
     background-position: center center;
@@ -934,6 +952,7 @@ section {
       }
     }
   }
+
   .register {
     background: url(../images/login_background.png);
     background-position: center center;
@@ -1022,6 +1041,7 @@ section {
       }
     }
   }
+
   .check-out{
     .checkout-form{
       .checkout-input{
@@ -1056,6 +1076,7 @@ section {
       }
     }
   }
+
   .cart{
     .shoping-cart-table{
 
@@ -1085,6 +1106,7 @@ section {
     }
 
   }
+
   .detail{
     .detail-details-pic{
       .detail-details-pic-item{
@@ -1106,6 +1128,36 @@ section {
         font-weight: 600;
         margin-bottom: 15px;
       }
+      .product-details-quantity{
+        .pro-qty {
+          width: 140px;
+          height: 50px;
+          display: inline-block;
+          position: relative;
+          text-align: center;
+          background: #f5f5f5;
+          margin-bottom: 5px;
+          user-select: none;
+          .qtybtn {
+            width: 35px;
+            font-size: 16px;
+            color: #6f6f6f;
+            cursor: pointer;
+            display: inline-block;
+          }
+          input {
+            height: 100%;
+
+            font-size: 16px;
+            color: #6f6f6f;
+            width: 50px;
+            border: none;
+            background: #f5f5f5;
+            text-align: center;
+          }
+        }
+      }
+
     }
     .product-details-tab{
       .nav-tabs {
@@ -1116,6 +1168,7 @@ section {
           color: #495057;
           background-color: #fff;
           border-color: #dee2e6 #dee2e6 #fff;
+
 
         }
       }

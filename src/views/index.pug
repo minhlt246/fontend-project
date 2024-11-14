@@ -22,8 +22,8 @@ block content
             button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
                 span.carousel-control-next-icon(aria-hidden='true')
                 span.visually-hidden Next
-        #team.team.team-box.pb-4.my-5
-            .team-content.pb-3.pb-lg-5
+        #product.product.product-box.pb-4.my-5
+            .product-content.pb-3.pb-lg-5
                 .container
                     .wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.3s')
                         .justify-content-center.my-5.w-100
@@ -33,14 +33,16 @@ block content
                                     .fs-5.text-center.service-title.text-uppercase.text-while.justify-content-center
                                          |   Meet of Professionals
                     .row
-                        - for (var i = 0; i < 9; ++i)
-                            .col-md-6.col-lg-4.py-3.wow.fadeInUp(data-wow-delay='0.5s' data-wow-duration='0.3s')
-                                .card.team-card.hvr-float
+                        - for (var i = 0; i < 8; ++i)
+                            .col-md-6.col-lg-3.wow.fadeInUp.my-2(data-wow-delay='0.5s' data-wow-duration='0.3s')
+                                .card.product-card.hvr-float
                                     .card-body
-                                        .card-img.w-100.justify-content-center.team-banner
-                                            img.team-img(src="client/images/product-" + i + ".jpeg")
+                                        .card-img.justify-content-center.team-banner
+                                            img.product-img(src=`client/images/product-${i}.jpeg` alt="Product Image")
+
                                         .mx-3.product-bg
-                                            img.team-people(src='client/images/VietNam.png')
+                                            img.team-people(src='client/images/VietNam.png' alt="Country Flag")
+
                                         .pt-2.text-start.d-flex.align-items-center
                                             i.fa-solid.fa-user
                                             p.mb-0.mx-3 55K Buying
@@ -57,14 +59,17 @@ block content
                                         .d-flex.align-items-center.mt-1
                                             i.fa-solid.fa-location-dot
                                             p.mb-0.ms-3 VietNam
-                                    .line-team.d-flex.text-start.my-2
-                                        h4.text-highline.ms-3.mb-0 1,400 $
-                                        p.ms-3.text-decoration-line-through.mb-0 1,200 $
 
-                                    p.align-items-center.text-start.mx-3
-                                       | là một trong số những loại áo có cổ, hay còn được nhiều người biết tới là áo cổ gập
+                                    .product-team.d-flex.text-start.my-2
+                                        h4.text-highline.ms-3.mb-0 $1,400
+                                        p.ms-3.text-decoration-line-through.mb-0 $1,200
+
+                                    p.text-start.mx-3
+                                        | Là một trong số những loại áo có cổ, hay còn được nhiều người biết tới là áo cổ gập
+
                                     .align-items-center.text-start.mx-3.mb-2
-                                        button.btn.btn-submit.text-white(type='submit') Oder Now
+                                        a.btn.btn-submit.text-white(type='button' href='detail.html') Order Now
+
         #sell.featured.spad
                 .container
                     .row

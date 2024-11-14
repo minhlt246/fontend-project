@@ -2,7 +2,16 @@ extends _layouts/master
 
 block content
     section
-        .product
+        .container
+            ol.breadcrumb.py-4.fs-6
+                li.breadcrumb-item
+                    a(href='#') Home
+                li.breadcrumb-item
+                    a(href='#') Điền thông tin
+                li.breadcrumb-item
+                    a(href='#') Xác nhận
+                li.breadcrumb-item.active.css-ilends(aria-current='page')
+                    p Hoàn tất đơn hàng
             .container
                 .tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='1')
                     ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-tags(role='tablist')

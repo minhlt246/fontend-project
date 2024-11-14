@@ -3,23 +3,31 @@ extends _layouts/master
 
 block content
     section
-        .detail
-
+        .detail.mt-4
             .container
+                ol.breadcrumb.py-4.fs-6
+                    li.breadcrumb-item
+                        a(href='#') Home
+                    li.breadcrumb-item
+                        a(href='#') Điền thông tin
+                    li.breadcrumb-item
+                        a(href='#') Xác nhận
+                    li.breadcrumb-item.active.css-ilends(aria-current='page')
+                        p Hoàn tất đơn hàng
                 .row
                     .col-lg-6.col-md-6
                         .detail-details-pic
                             .detail-details-pic-item
-                                img.detail-details-pic-item-large(src='https://ogani.com.vn/public/products/VEG01002/cai-thia-thuy-canh-tui-300g-202205181537029210.jpg' alt='')
-                            .product__details__pic__slider.owl-carousel.owl-loaded.owl-drag
+                                img.detail-details-pic-item-large(src='client/images/product-love-1.png')
+                            .owl-carousel.owl-loaded.owl-drag
                                 .owl-stage-outer
                                     .owl-stage(style='transform: translate3d(0px, 0px, 0px); transition: all; width: 436px;')
                                         .owl-item.active(style='width: 125.25px; margin-right: 20px;')
-                                            img(data-imgbigurl='https://ogani.com.vn/public/products/VEG01002/1375bc48-5765-4666-8fb2-c68b7df4c12d.png' src='https://ogani.com.vn/public/products/VEG01002/1375bc48-5765-4666-8fb2-c68b7df4c12d.png' alt='')
+                                            img
                                         .owl-item.active(style='width: 125.25px; margin-right: 20px;')
-                                            img(data-imgbigurl='https://ogani.com.vn/public/products/VEG01002/cai-thia-thuy-canh-tui-300g-202205181537026488.jpg' src='https://ogani.com.vn/public/products/VEG01002/cai-thia-thuy-canh-tui-300g-202205181537026488.jpg' alt='')
+                                            img
                                         .owl-item.active(style='width: 125.25px; margin-right: 20px;')
-                                            img(data-imgbigurl='https://ogani.com.vn/public/products/VEG01002/cai-thia-thuy-canh-tui-300g-202205181537029210.jpg' src='https://ogani.com.vn/public/products/VEG01002/cai-thia-thuy-canh-tui-300g-202205181537029210.jpg' alt='')
+                                            img
                                 .owl-nav.disabled
                                     button.owl-prev(type='button' role='presentation')
                                         span(aria-label='Previous') &lsaquo;
@@ -31,32 +39,21 @@ block content
 
                     .col-lg-6.col-md-6
                         .product-details-text
-                            h3 (300g)
+                            h3(300g)
                             .product-details-price
                                 | 13.000 D
                                 p.mb-0
                                     span(style='font-size: 16px; text-decoration: line-through;') 15.000 &dstrok;
-                            p
+
                             .d-flex.justify-content-between
                                 .product-details-quantity
-                                    .quantity
-                                        .pro-qty
-                                            span.dec.qtybtn -
-                                            input.product-quantity(type='text' data-product-id='189' value='1')
-                                            span.inc.qtybtn +
+
+                                    .pro-qty
+                                        span.dec.qtybtn -
+                                        input.product-quantity(type='text' data-product-id='189' value='1')
+                                        span.inc.qtybtn +
 
                                 button.primary-btn.product-page-add-to-cart(data-product-id='2') Th&ecirc;m v&agrave;o gi&#x1ECF; h&agrave;ng
-                            // <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
-                            ul
-                                li
-                                    b T&igrave;nh tr&#x1EA1;ng
-                                    span C&ograve;n h&agrave;ng
-                                li
-                                    b M&ocirc; t&#x1EA3;
-                                    span
-                                li
-                                    b M&atilde; s&#x1EA3;n ph&#x1EA9;m
-                                    span VEG01002
 
 
                     .col-lg-12
@@ -71,53 +68,28 @@ block content
                                 #description.tab-pane.fade.active.show(role='tabpanel')
                                     .product-details-tab-desc
                                         h6 Mô tả sản phẩm
-                                        .product-details-content.text-highline
-                                            p Tên sản phẩm: Balo Thời Trang Cao Cấp - Urban Style
-
-                                            p Mục đích sử dụng: Balo Urban Style được thiết kế cho các bạn trẻ năng động, phù hợp cho cả đi học, đi làm và du lịch ngắn ngày. Sản phẩm không chỉ giúp bạn dễ dàng mang theo các vật dụng cần thiết mà còn là một phụ kiện thời trang hiện đại.
-
-                                            p Chất liệu và thiết kế: Balo được làm từ chất liệu vải canvas chống thấm nước và bền chắc, giúp bảo vệ đồ dùng của bạn ngay cả khi trời mưa. Thiết kế tối giản với các chi tiết gọn gàng, tinh tế cùng đường may chắc chắn, phù hợp với phong cách đường phố.
-
-                                            P Các tính năng đặc biệt:
-
-                                               | Ngăn chứa rộng rãi, đủ chỗ cho laptop 15.6 inch, sách vở, và các vật dụng cá nhân.
-                                                | Ngăn phụ bên ngoài có khóa kéo tiện lợi cho các món đồ nhỏ.
-                                               | Quai đeo êm ái, có thể điều chỉnh độ dài, tạo cảm giác thoải mái khi đeo cả ngày dài.
-                                               | Lợi ích: Với thiết kế thời trang và chất lượng cao cấp, balo Urban Style không chỉ giúp bạn dễ dàng tổ chức và mang theo các vật dụng mà còn là điểm nhấn nổi bật cho phong cách của bạn.
-
-                                            p Hướng dẫn sử dụng:
-
-                                               | Đảm bảo kiểm tra các khóa kéo trước khi sử dụng.
-                                                   | Tránh để balo quá tải để bảo vệ dây đeo và các ngăn.
-                                                   | Chính sách bảo hành và chăm sóc: Bảo hành 12 tháng với các lỗi do nhà sản xuất. Để sản phẩm luôn bền đẹp, bạn nên vệ sinh bằng tay và tránh dùng máy giặt.
-
-                                            p Đánh giá từ người dùng:
-
-                                               | "Balo rất đẹp, dùng khá thoải mái và chống thấm tốt." – Minh Tâm
-                                               | "Quá hợp với style của mình, đeo đi đâu ai cũng khen!" – Lan Anh
 
                                 #contact.tab-pane.fade(role='tabpanel')
-                                    .product-details-tab-desc
-                                        .contact-form.spad(style='padding-top: 0;')
+                                    .product-details-tab-nas
+                                        .contact-form(style='padding-top: 0;')
                                             .container
                                                 .row
                                                     .col-lg-12.text-center
-                                                       h2.text-uppercase.fw-bold Phan HOi Ve chat luong san pham
+                                                        h2.text-uppercase.fw-bold Phản hồi về chất lượng sản phẩm
                                                 form(action='' method='post')
                                                     .row
-                                                        .row
-                                                            .col-lg-6
-
-                                                                    input(required='' name='name' type='text' placeholder='Họ tên*')
-
-                                                            .col-lg-6
-
-                                                                    input(required='' name='phone' type='tel' placeholder='Số điện thoại*')
-
-                                                            input(required='' name='email' type='email' placeholder='Email*')
-
-                                                            textarea(required='' name='content' placeholder='Nội dung*')
-
+                                                        .col-lg-6
+                                                            input.form-control(required name='name' type='text' placeholder='Họ tên*')
+                                                        .col-lg-6
+                                                            input.form-control(required name='phone' type='tel' placeholder='Số điện thoại*')
+                                                    .row
+                                                        .col-lg-12
+                                                            input.form-control(required name='email' type='email' placeholder='Email*')
+                                                    .row
+                                                        .col-lg-12
+                                                            textarea.form-control(required name='content' placeholder='Nội dung*')
+                                                    .row
                                                         .col-lg-12.text-center
-                                                            input(type='hidden' name='page' value=')')
-                                                            button.site-btn(type='submit')
+                                                            input(type='hidden' name='page' value='contact')
+                                                            button.site-btn(type='submit') Gửi phản hồi
+
