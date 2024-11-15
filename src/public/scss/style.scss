@@ -209,7 +209,14 @@ body {
 .text-highline {
   color: $color-active;
 }
-
+.btn-get-started {
+  background-color: #00FF00;
+  border-radius: 30px;
+  padding: 8px 30px;
+  border: 2px solid transparent;
+  transition: 0.3s all ease-in-out;
+  font-size: 14px;
+}
 .slick-slider {
   .slick-prev, .slick-next {
     position: absolute;
@@ -757,6 +764,10 @@ section {
       .nav-item{
         .nav-link{
           color: #000000;
+          @include sm {
+            font-size: 15px;
+            padding: 0;
+          }
         }
         .active{
           background:  none;
@@ -1173,6 +1184,26 @@ section {
         }
       }
     }
+  }
+
+  .about{
+    .about-us{
+      .content {
+        background-color: var(--surface-color);
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .services{
+        .services-item{
+          .services-icon {
+            color: #00FF00;
+            margin-bottom: 20px;
+          }
+        }
+
+      }
+    }
+
   }
 }
 

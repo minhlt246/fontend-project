@@ -2,119 +2,120 @@ extends _layouts/master
 
 block content
     section
-        .container
-            ol.breadcrumb.py-4.fs-6
-                li.breadcrumb-item
-                    a(href='#') Home
-                li.breadcrumb-item
-                    a(href='#') Điền thông tin
-                li.breadcrumb-item
-                    a(href='#') Xác nhận
-                li.breadcrumb-item.active.css-ilends(aria-current='page')
-                    p Hoàn tất đơn hàng
+        .product
             .container
-                .tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='1')
-                    ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-tags(role='tablist')
-                        li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#referral' type='button' role='tab' aria-selected='true') Nhẫn
-                        li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Chuyền
-                        li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#transaction' type='button' role='tab' aria-selected='false' tabindex='-1') Lắc Tay
-                        li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#level' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Lưng
-                        li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#matching' type='button' role='tab' aria-selected='false' tabindex='-1') Phụ Kiện 
-                        li.nav-item(role='presentation')
-                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#rank' type='button' role='tab' aria-selected='false' tabindex='-1') rank bonus
-            #carouselExampleIndicator.carousel.slide(data-bs-ride='carousel')
-                .carousel-indicators
-                    button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
-                    button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
-                    button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
-                .carousel-inner
-                    .carousel-item.active
-                        img.d-block.w-100.carousel-img(src='client/images/banner-1.jpg')
+                ol.breadcrumb.py-4.fs-6
+                    li.breadcrumb-item
+                        a(href='#') Home
+                    li.breadcrumb-item
+                        a(href='#') Điền thông tin
+                    li.breadcrumb-item
+                        a(href='#') Xác nhận
+                    li.breadcrumb-item.active.css-ilends(aria-current='page')
+                        p Hoàn tất đơn hàng
+                .container
+                    .tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='1')
+                        ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-tags(role='tablist')
+                            li.nav-item(role='presentation')
+                                button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#referral' type='button' role='tab' aria-selected='true') Nhẫn
+                            li.nav-item(role='presentation')
+                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Chuyền
+                            li.nav-item(role='presentation')
+                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#transaction' type='button' role='tab' aria-selected='false' tabindex='-1') Lắc Tay
+                            li.nav-item(role='presentation')
+                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#level' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Lưng
+                            li.nav-item(role='presentation')
+                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#matching' type='button' role='tab' aria-selected='false' tabindex='-1') Phụ Kiện
+                            li.nav-item(role='presentation')
+                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#rank' type='button' role='tab' aria-selected='false' tabindex='-1') rank bonus
+                #carouselExampleIndicator.carousel.slide(data-bs-ride='carousel')
+                    .carousel-indicators
+                        button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+                        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100.carousel-img(src='client/images/banner-1.jpg')
 
-                    .carousel-item
-                        img.d-block.w-100(src='client/images/banner-1.jpg')
-                    .carousel-item
-                        img.d-block.w-100(src='client/images/banner-1.jpg')
-                button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
-                    span.carousel-control-prev-icon(aria-hidden='true')
-                    span.visually-hidden Previous
-                button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
-                    span.carousel-control-next-icon(aria-hidden='true')
-                    span.visually-hidden Next
-            .container
-                .row
-                    .tab-content.my-3
-                        #referral.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
-                            .row
-                                - for (var i = 1; i < 9; ++i)
-                                    .col-lg-3.mb-2.col-md-6
-                                        .card
-                                            .card-body.p-2
-                                                img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                h5.card-title Khuyên tai bạc
-                                                p.card-price
-                                                    | 799,000 vnđ
-                                                a.btn.btn-primary.w-100(href='#') Go somewhere
+                        .carousel-item
+                            img.d-block.w-100(src='client/images/banner-1.jpg')
+                        .carousel-item
+                            img.d-block.w-100(src='client/images/banner-1.jpg')
+                    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.visually-hidden Previous
+                    button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.visually-hidden Next
+                .container
+                    .row
+                        .tab-content.my-3
+                            #referral.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
+                                .row
+                                    - for (var i = 1; i < 9; ++i)
+                                        .col-lg-3.mb-2.col-md-6
+                                            .card
+                                                .card-body.p-2
+                                                    img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
+                                                    h5.card-title Khuyên tai bạc
+                                                    p.card-price
+                                                        | 799,000 vnđ
+                                                    a.btn.btn-primary.w-100(href='#') Go somewhere
 
 
-                        #account.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
-                            .row
-                                - for (var i = 1; i < 9; ++i)
-                                    .col-lg-3.mb-2.col-md-6
-                                        .card
-                                            .card-body.p-2
-                                                img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                h5.card-title Khuyên tai bạc
-                                                p.card-price
-                                                    | 799,000 vnđ
-                                                a.btn.btn-primary.w-100(href='#') Go somewhere
-                        #transaction.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
-                            .row
-                                - for (var i = 1; i < 9; ++i)
-                                    .col-lg-3.mb-2.col-md-6
-                                        .card
-                                            .card-body.p-2
-                                                img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                h5.card-title Khuyên tai bạc
-                                                p.card-price
-                                                    | 799,000 vnđ
-                                                a.btn.btn-primary.w-100(href='#') Go somewhere
-                        #level.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
-                            .row
-                                - for (var i = 1; i < 9; ++i)
-                                    .col-lg-3.mb-2.col-md-6
-                                        .card
-                                            .card-body.p-2
-                                                img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                h5.card-title Khuyên tai bạc
-                                                p.card-price
-                                                    | 799,000 vnđ
-                                                a.btn.btn-primary.w-100(href='#') Go somewhere
-                        #matching.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
-                            .row
-                                - for (var i = 1; i < 9; ++i)
-                                    .col-lg-3.mb-2.col-md-6
-                                        .card
-                                            .card-body.p-2
-                                                img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                h5.card-title Khuyên tai bạc
-                                                p.card-price
-                                                    | 799,000 vnđ
-                                                a.btn.btn-primary.w-100(href='#') Go somewhere
-                        #rank.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
-                            .row
-                                - for (var i = 1; i < 9; ++i)
-                                    .col-lg-3.mb-2.col-md-6
-                                        .card
-                                            .card-body.p-2
-                                                img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                h5.card-title Khuyên tai bạc
-                                                p.card-price
-                                                    | 799,000 vnđ
-                                                a.btn.btn-primary.w-100(href='#') Go somewhere
+                            #account.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
+                                .row
+                                    - for (var i = 1; i < 9; ++i)
+                                        .col-lg-3.mb-2.col-md-6
+                                            .card
+                                                .card-body.p-2
+                                                    img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
+                                                    h5.card-title Khuyên tai bạc
+                                                    p.card-price
+                                                        | 799,000 vnđ
+                                                    a.btn.btn-primary.w-100(href='#') Go somewhere
+                            #transaction.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
+                                .row
+                                    - for (var i = 1; i < 9; ++i)
+                                        .col-lg-3.mb-2.col-md-6
+                                            .card
+                                                .card-body.p-2
+                                                    img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
+                                                    h5.card-title Khuyên tai bạc
+                                                    p.card-price
+                                                        | 799,000 vnđ
+                                                    a.btn.btn-primary.w-100(href='#') Go somewhere
+                            #level.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
+                                .row
+                                    - for (var i = 1; i < 9; ++i)
+                                        .col-lg-3.mb-2.col-md-6
+                                            .card
+                                                .card-body.p-2
+                                                    img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
+                                                    h5.card-title Khuyên tai bạc
+                                                    p.card-price
+                                                        | 799,000 vnđ
+                                                    a.btn.btn-primary.w-100(href='#') Go somewhere
+                            #matching.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
+                                .row
+                                    - for (var i = 1; i < 9; ++i)
+                                        .col-lg-3.mb-2.col-md-6
+                                            .card
+                                                .card-body.p-2
+                                                    img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
+                                                    h5.card-title Khuyên tai bạc
+                                                    p.card-price
+                                                        | 799,000 vnđ
+                                                    a.btn.btn-primary.w-100(href='#') Go somewhere
+                            #rank.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
+                                .row
+                                    - for (var i = 1; i < 9; ++i)
+                                        .col-lg-3.mb-2.col-md-6
+                                            .card
+                                                .card-body.p-2
+                                                    img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
+                                                    h5.card-title Khuyên tai bạc
+                                                    p.card-price
+                                                        | 799,000 vnđ
+                                                    a.btn.btn-primary.w-100(href='#') Go somewhere
 

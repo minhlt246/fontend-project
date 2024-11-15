@@ -2,90 +2,91 @@ extends _layouts/master
 
 block content
     section
-        #about-2.about-us.section
-            .container
-                .content
-                    .row.justify-content-center
-                        .col-sm-12.col-md-5.col-lg-4.col-xl-4.order-lg-2.offset-xl-1.mb-4
-                            .img-wrap.text-center.text-md-left.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
-                                .img
-                                    img.img-fluid(src='assets/img/img_v_3.jpg' alt='circle image')
-                        .offset-md-0.offset-lg-1.col-sm-12.col-md-5.col-lg-5.col-xl-4.aos-init.aos-animate(data-aos='fade-up')
-                            .px-3
-                                span.content-subtitle Our Mission
-                                h2.content-title.text-start
-                                    | The Big Oxmox advised her not to do so, because there were
-                                    | thousands.
-                                p.lead
-                                    | A small river named Duden flows by their place and supplies it
-                                    | with the necessary regelialia. It is a paradisematic country.
-                                p.mb-5
-                                    | The Big Oxmox advised her not to do so, because there were
-                                    | thousands of bad Commas, wild Question Marks and devious Semikoli.
-                                p
-                                    a.btn-get-started(href='#') Get Started
-        #services.services.section.light-background
-            .container
-                .row.gy-4.justify-content-center
-                    .col-lg-3
-                        .services-item.aos-init.aos-animate(data-aos='fade-up')
-                            .services-icon
-                                i.bi.bi-bullseye
-                            div
-                                h3 Technology
-                                p Separated they live in Bookmarksgrove right at the coast
-                    .col-lg-3
-                        .services-item.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
-                            .services-icon
-                                i.bi.bi-command
-                            div
-                                h3 Web Design
-                                p Separated they live in Bookmarksgrove right at the coast
-                    .col-lg-3
-                        .services-item.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='200')
-                            .services-icon
-                                i.bi.bi-bar-chart
-                            div
-                                h3 Branding
-                                p Separated they live in Bookmarksgrove right at the coast
-        #stats.stats.section.light-background
-            .container
-                .row.gy-4.justify-content-center
-                    .col-lg-5
-                        .images-overlap
-                            img.img-fluid.img-1.aos-init.aos-animate(src='assets/img/img_v_1.jpg' alt='student' data-aos='fade-up')
-                    .col-lg-4.ps-lg-5
-                        span.content-subtitle Why Us
-                        h2.content-title Far far away Behind the Word Mountains
-                        p.lead
-                            | Far far away, behind the word mountains, far from the countries
-                            | Vokalia and Consonantia.
-                        p.mb-5
-                            | There live the blind texts. Separated they live in Bookmarksgrove
-                            | right at the coast of the Semantics, a large language ocean.
-                        .row.mb-5.count-numbers
-                            // Start Stats Item
-                            .col-4.counter.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
-                                span.purecounter.number(data-purecounter-separator='true' data-purecounter-start='0' data-purecounter-end='3919' data-purecounter-duration='0') 3,919
-                                span.d-block Coffee
-                            // End Stats Item
-                            // Start Stats Item
-                            .col-4.counter.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='200')
-                                span.purecounter.number(data-purecounter-separator='true' data-purecounter-start='0' data-purecounter-end='2831' data-purecounter-duration='0') 2,831
-                                span.d-block Codes
-                            // End Stats Item
-                            // Start Stats Item
-                            .col-4.counter.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='300')
-                                span.purecounter.number(data-purecounter-separator='true' data-purecounter-start='0' data-purecounter-end='1914' data-purecounter-duration='0') 1,914
-                                span.d-block Projects
-        #team.team
-            .site-section.slider-team-wrap
+        .about
+            #about.about-us.section
                 .container
-                    .slider-nav.d-flex.justify-content-end.mb-3
-                        a.js-prev.js-custom-prev(href='#' tabindex='0' role='button' aria-label='Previous slide' aria-controls='swiper-wrapper-0e87094197172581')
-                            i.bi.bi-arrow-left-short
-                        a.js-next.js-custom-next(href='#' tabindex='0' role='button' aria-label='Next slide' aria-controls='swiper-wrapper-0e87094197172581')
-                            i.bi.bi-arrow-right-short
-                    .swiper.init-swiper.aos-init.swiper-initialized.swiper-horizontal.swiper-backface-hidden.aos-animate(data-aos='fade-up' data-aos-delay='100')
+                    .content
+                        .row.justify-content-center
+                            .col-sm-12.col-md-5.col-lg-4.col-xl-4.order-lg-2.offset-xl-1.mb-4
+                                .img-wrap.text-center.text-md-left.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
+                                    .img
+                                        img.img-fluid(src="client/images/product-love-1.png")
+                            .offset-md-0.offset-lg-1.col-sm-12.col-md-5.col-lg-5.col-xl-4.aos-init.aos-animate(data-aos='fade-up')
+                                .px-3
+                                    span.content-subtitle Our Mission
+                                    h2.content-title.text-start
+                                        | The Big Oxmox advised her not to do so, because there were
+                                        | thousands.
+                                    p.lead
+                                        | A small river named Duden flows by their place and supplies it
+                                        | with the necessary regelialia. It is a paradisematic country.
+                                    p.mb-5
+                                        | The Big Oxmox advised her not to do so, because there were
+                                        | thousands of bad Commas, wild Question Marks and devious Semikoli.
+                                    p
+                                        a.btn-get-started(href='#') Get Started
+            #services.services.light-background
+                .container
+                    .row.gy-4.justify-content-center
+                        .col-lg-3
+                            .services-item.aos-init.aos-animate(data-aos='fade-up')
+                                .services-icon
+                                    i.fa-solid.fa-bullseye
+                                div
+                                    h3 Technology
+                                    p Separated they live in Bookmarksgrove right at the coast
+                        .col-lg-3
+                            .services-item.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
+                                .services-icon
+                                    i.fa-solid.fa-command
+                                div
+                                    h3 Web Design
+                                    p Separated they live in Bookmarksgrove right at the coast
+                        .col-lg-3
+                            .services-item.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='200')
+                                .services-icon
+                                    i.bi.bi-bar-chart
+                                div
+                                    h3 Branding
+                                    p Separated they live in Bookmarksgrove right at the coast
+            #stats.stats.section.light-background.mt-3
+                .container
+                    .row.gy-4.justify-content-center
+                        .col-lg-5
+                            .images-overlap
+                                img.img-1.aos-init.aos-animateimg.img-fluid(src="client/images/product-love-1.png")
+                        .col-lg-4.ps-lg-5
+                            span.content-subtitle Why Us
+                            h2.content-title Far far away Behind the Word Mountains
+                            p.lead
+                                | Far far away, behind the word mountains, far from the countries
+                                | Vokalia and Consonantia.
+                            p.mb-5
+                                | There live the blind texts. Separated they live in Bookmarksgrove
+                                | right at the coast of the Semantics, a large language ocean.
+                            .row.mb-5.count-numbers
+                                // Start Stats Item
+                                .col-4.counter.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
+                                    span.purecounter.number(data-purecounter-separator='true' data-purecounter-start='0' data-purecounter-end='3919' data-purecounter-duration='0') 3,919
+                                    span.d-block Coffee
+                                // End Stats Item
+                                // Start Stats Item
+                                .col-4.counter.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='200')
+                                    span.purecounter.number(data-purecounter-separator='true' data-purecounter-start='0' data-purecounter-end='2831' data-purecounter-duration='0') 2,831
+                                    span.d-block Codes
+                                // End Stats Item
+                                // Start Stats Item
+                                .col-4.counter.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='300')
+                                    span.purecounter.number(data-purecounter-separator='true' data-purecounter-start='0' data-purecounter-end='1914' data-purecounter-duration='0') 1,914
+                                    span.d-block Projects
+            #team.team
+                .site-section.slider-team-wrap
+                    .container
+                        .slider-nav.d-flex.justify-content-end.mb-3
+                            a.js-prev.js-custom-prev(href='#' tabindex='0' role='button' aria-label='Previous slide' aria-controls='swiper-wrapper-0e87094197172581')
+                                i.bi.bi-arrow-left-short
+                            a.js-next.js-custom-next(href='#' tabindex='0' role='button' aria-label='Next slide' aria-controls='swiper-wrapper-0e87094197172581')
+                                i.bi.bi-arrow-right-short
+                        .swiper.init-swiper.aos-init.swiper-initialized.swiper-horizontal.swiper-backface-hidden.aos-animate(data-aos='fade-up' data-aos-delay='100')
 
 
