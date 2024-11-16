@@ -217,6 +217,9 @@ body {
   transition: 0.3s all ease-in-out;
   font-size: 14px;
 }
+.bg-primarty{
+  background-color: #d4a762 ;
+}
 .slick-slider {
   .slick-prev, .slick-next {
     position: absolute;
@@ -347,6 +350,16 @@ body {
     --bs-body-bg: transparent;
     --bs-table-color: #FFFFFF;
 
+  }
+}
+.btn-primarty{
+  color: #000;
+  background-color: #dab47a;
+  border-color: #d8b072;
+  box-shadow: 0 0 0 .25rem rgba(180, 142, 83, .5);
+  &:hover{
+    background-color:#000 ;
+    color: #dab47a;
   }
 }
 .text-title{
@@ -1200,6 +1213,9 @@ section {
             margin-bottom: 20px;
           }
         }
+
+      }
+      .stats{
 
       }
     }
