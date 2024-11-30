@@ -17,19 +17,21 @@ block content
                 .row.gy-5
                     - for (var i = 0; i < 8; ++i)
                         .col-lg-4.col-md-6
-                            article
-                                .post-img
-                                    img.img-fluid(src='client/images/blog/blog-1.jpg' alt='')
+                            article.w-100
+                                .post-img.w-100
+                                    img.img-fluid.w-100(src='client/images/blog/blog-1.jpg' alt='')
                                 .meta-top
-                                    ul
+                                    ul.p-0.text-start
                                         li.d-flex.align-items-center
-                                            a(href='blog-details.html') Sorts
+                                            a.text-black(href='') Sorts
                                         li.d-flex.align-items-center
                                             i.bi.bi-dot
-                                            a(href='')
-                                                time(datetime='2022-01-01') Jan 1, 2022
-                                h2.title
+                                            a.text-black(href='')
+                                                time(datetime='2022-01-01') Jan 1, 2024
+                                p.title
                                     a(href='').text-black Dolorum optio tempore voluptas dignissimos
+
+                                .btn.btn-primari READ MORE
 
 
 

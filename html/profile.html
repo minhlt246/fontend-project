@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Ubrand-shop</title>
+    <link rel="icon" href="./client/images/logo.png" type="image/gif" sizes="16x16">
+    <!-- main css-->
+    <link rel="stylesheet" href="client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/all.min.css">
+    <link rel="stylesheet" href="client/css/hover-min.css">
+    <link rel="stylesheet" href="client/css/flag-icons.min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/slick/slick.css">
+    <!--link(rel='stylesheet' href='client/fonts/fontstyle.css')-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg mx-lg-4">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img class="img-logo" src="./client/images/logo.png"></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="offcanvas offcanvas-start" id="menu" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title"><img class="img-logo" src="./client/images/logo.png"></div>
+              <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body align-items-center">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 align-items-center">
+                <li class="nav-item mx-lg-2">
+                  <div class="input-group"><span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="form-control" id="exampleInputEmail1" type="email" placeholder="Serch" aria-describedby="emailHelp" required=""><span class="input-group-text">Serch</span>
+                  </div>
+                </li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="product.html">Sản Phẩm</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="new-post.html">Tin tức</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="about-us.html">Giới thiệu</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+              </ul>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end"><a class="btn me-md-2 btn-log" type="button" href="register.html">Đăng KÍ</a><a class="btn btn-reg" type="button" href="Login.html">ĐĂng Nhập</a></div><a class="text-black fs-4 align-items-center ms-3" type="button" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container my-5">
+        <!-- Header thông tin người dùng-->
+        <div class="profile-header"><img class="profile-avatar" src="https://via.placeholder.com/80" alt="User Avatar">
+          <div class="profile-info">
+            <h2>Nguy&#x1EC5;n V&abreve;n A</h2>
+            <p class="profile-email">Email: nguyenvana@example.com</p>
+            <p class="profile-phone">S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i: 0123456789</p>
+          </div>
+        </div>
+        <!-- Danh sách đơn hàng-->
+        <h3 class="order-title">Danh s&aacute;ch &dstrok;&#x1A1;n h&agrave;ng</h3>
+        <ul class="order-list">
+          <!-- Đơn hàng 1-->
+          <li class="order-item">
+            <div class="order-details">
+              <p class="order-id"><strong>M&atilde; &dstrok;&#x1A1;n h&agrave;ng:</strong> #12345</p>
+              <p class="order-date"><strong>Ng&agrave;y &dstrok;&#x1EB7;t h&agrave;ng:</strong> 25/11/2024</p>
+              <p class="order-total"><strong>T&#x1ED5;ng ti&#x1EC1;n:</strong> 1,200,000 VND</p>
+            </div>
+            <div class="order-status"><span class="status-completed">Ho&agrave;n th&agrave;nh</span></div>
+          </li>
+          <!-- Đơn hàng 2-->
+          <li class="order-item">
+            <div class="order-details">
+              <p class="order-id"><strong>M&atilde; &dstrok;&#x1A1;n h&agrave;ng:</strong> #12346</p>
+              <p class="order-date"><strong>Ng&agrave;y &dstrok;&#x1EB7;t h&agrave;ng:</strong> 26/11/2024</p>
+              <p class="order-total"><strong>T&#x1ED5;ng ti&#x1EC1;n:</strong> 750,000 VND</p>
+            </div>
+            <div class="order-status"><span class="status-pending">&Dstrok;ang ch&#x1EDD; x&#x1EED; l&yacute;</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="d-flex justify-content-center my-5 mb-lg-5"><img class="img-logo" src="client/images/logo.png"></div>
+      <div class="text-center mb-4">Subscribe to be informed about token<br>sale in advance</div>
+      <div class="row mx-0">
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="input-group mb-3 rounded-5">
+            <input class="form-control rounded-start-5" type="text" placeholder="Email"><span class="input-group-text p-0 rounded-end-5">
+              <button class="btn btn-john px-4 py-2 rounded-5" type="submit">Subscribe</button></span>
+          </div>
+          <div class="socical-group d-flex justify-content-center py-3"><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-facebook-f"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-reddit-alien"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-youtube"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-x-twitter"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-telegram"></i></div></a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- main js-->
+    <script src="client/js/all.min.js"></script>
+    <script src="client/js/jquery.min.js"></script>
+    <script src="client/js/bootstrap.bundle.min.js"></script>
+    <script src="client/js/moment.js"></script>
+    <script src="client/slick/slick.js"></script>
+    <script src="client/js/main.js"></script>
+    <script>
+      $(function () {
+          if ($(window).width() > 769) {
+              $('.menu .dropdown > a').click(function () {
+                  location.href = this.href;
+              });
+          }
+      })
+    </script>
+  </body>
+</html>

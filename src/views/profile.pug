@@ -1,0 +1,44 @@
+extends _layouts/master
+
+block content
+    section
+        .container.my-5
+            // Header thông tin người dùng
+            .profile-header
+                img.profile-avatar(src='https://via.placeholder.com/80' alt='User Avatar')
+                .profile-info
+                    h2 Nguy&#x1EC5;n V&abreve;n A
+                    p.profile-email Email: nguyenvana@example.com
+                    p.profile-phone S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i: 0123456789
+            // Danh sách đơn hàng
+            h3.order-title Danh s&aacute;ch &dstrok;&#x1A1;n h&agrave;ng
+            ul.order-list
+                // Đơn hàng 1
+                li.order-item
+                    .order-details
+                        p.order-id
+                            strong M&atilde; &dstrok;&#x1A1;n h&agrave;ng:
+                            |  #12345
+                        p.order-date
+                            strong Ng&agrave;y &dstrok;&#x1EB7;t h&agrave;ng:
+                            |  25/11/2024
+                        p.order-total
+                            strong T&#x1ED5;ng ti&#x1EC1;n:
+                            |  1,200,000 VND
+                    .order-status
+                        span.status-completed Ho&agrave;n th&agrave;nh
+                // Đơn hàng 2
+                li.order-item
+                    .order-details
+                        p.order-id
+                            strong M&atilde; &dstrok;&#x1A1;n h&agrave;ng:
+                            |  #12346
+                        p.order-date
+                            strong Ng&agrave;y &dstrok;&#x1EB7;t h&agrave;ng:
+                            |  26/11/2024
+                        p.order-total
+                            strong T&#x1ED5;ng ti&#x1EC1;n:
+                            |  750,000 VND
+                    .order-status
+                        span.status-pending &Dstrok;ang ch&#x1EDD; x&#x1EED; l&yacute;
+

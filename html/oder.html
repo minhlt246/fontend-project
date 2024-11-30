@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Ubrand-shop</title>
+    <link rel="icon" href="./client/images/logo.png" type="image/gif" sizes="16x16">
+    <!-- main css-->
+    <link rel="stylesheet" href="client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/all.min.css">
+    <link rel="stylesheet" href="client/css/hover-min.css">
+    <link rel="stylesheet" href="client/css/flag-icons.min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/slick/slick.css">
+    <!--link(rel='stylesheet' href='client/fonts/fontstyle.css')-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg mx-lg-4">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img class="img-logo" src="./client/images/logo.png"></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="offcanvas offcanvas-start" id="menu" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title"><img class="img-logo" src="./client/images/logo.png"></div>
+              <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body align-items-center">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 align-items-center">
+                <li class="nav-item mx-lg-2">
+                  <div class="input-group"><span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="form-control" id="exampleInputEmail1" type="email" placeholder="Serch" aria-describedby="emailHelp" required=""><span class="input-group-text">Serch</span>
+                  </div>
+                </li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="product.html">Sản Phẩm</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="new-post.html">Tin tức</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="about-us.html">Giới thiệu</a></li>
+                <li class="nav-item mx-lg-2"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+              </ul>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end"><a class="btn me-md-2 btn-log" type="button" href="register.html">Đăng KÍ</a><a class="btn btn-reg" type="button" href="Login.html">ĐĂng Nhập</a></div><a class="text-black fs-4 align-items-center ms-3" type="button" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="oder">
+        <div class="container order-container mt-5">
+          <div class="text-center">
+            <h1 class="order-title">Qu&#x1EA3;n l&yacute; &Dstrok;&#x1A1;n h&agrave;ng</h1>
+          </div>
+          <div class="tab-pane fade w-100" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="1">
+            <ul class="nav nav-pills my-4 btn-class nav-justified rounded-4 order-tabs" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link py-lg-3 active" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">T&#x1EA5;t c&#x1EA3;</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link py-lg-3" data-bs-toggle="tab" data-bs-target="#processing" type="button" role="tab">&Dstrok;ang x&#x1EED; l&yacute;</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link py-lg-3" data-bs-toggle="tab" data-bs-target="#shipping" type="button" role="tab">&Dstrok;ang v&#x1EAD;n chuy&#x1EC3;n</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link py-lg-3" data-bs-toggle="tab" data-bs-target="#delivered" type="button" role="tab">&Dstrok;&atilde; giao</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link py-lg-3" data-bs-toggle="tab" data-bs-target="#canceled" type="button" role="tab">&Dstrok;&atilde; h&#x1EE7;y</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content order-content">
+            <!-- All Orders-->
+            <div class="tab-pane fade show active" id="all" role="tabpanel">
+              <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+                <div class="d-flex align-items-center"><img class="rounded-circle me-2" src="https://via.placeholder.com/40" alt="Shop Logo"><strong class="shop-name">mycover.vn</strong></div>
+                <div>
+                  <button class="btn btn-outline-secondary btn-sm me-2">Chat</button>
+                  <button class="btn btn-outline-secondary btn-sm">Xem Shop</button>
+                </div>
+              </div>
+              <!-- Product Information-->
+              <div class="d-flex">
+                <!-- Product Image-->
+                <div class="me-3"><img class="rounded" src="https://via.placeholder.com/80" alt="Product Image"></div>
+                <!-- Product Details-->
+                <div class="flex-grow-1">
+                  <h6 class="product-title mb-1">&#x1ED0;p &dstrok;i&#x1EC7;n tho&#x1EA1;i T&#x1EEB; T&iacute;nh Trong Su&#x1ED1;t Cho iPhone 11 15 12 13...</h6>
+                  <p class="product-category text-muted mb-1">Ph&acirc;n lo&#x1EA1;i h&agrave;ng: M&agrave;u h&#x1ED3;ng nh&#x1EA1;t, iPhone 11</p>
+                  <p class="product-quantity text-muted mb-1">x1</p>
+                </div>
+                <!-- Order Status-->
+                <div class="text-end"><span class="badge bg-warning text-dark order-status">V&#x1EAD;n chuy&#x1EC3;n</span>
+                  <p class="text-muted small mt-1">[Qu&#x1ED1;c T&#x1EBF;] Ng&#x1B0;&#x1EDD;i g&#x1EED;i &dstrok;ang chu&#x1EA9;n b&#x1ECB; h&agrave;ng</p>
+                </div>
+              </div>
+              <!-- Order Footer-->
+              <div class="border-top pt-3 mt-3">
+                <p class="text-muted small mb-2">&Dstrok;&#x1A1;n h&agrave;ng s&#x1EBD; &dstrok;&#x1B0;&#x1EE3;c chu&#x1EA9;n b&#x1ECB; v&agrave; chuy&#x1EC3;n &dstrok;i tr&#x1B0;&#x1EDB;c<strong>30-11-2024</strong>.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div><span class="text-muted">Th&agrave;nh ti&#x1EC1;n:</span><span class="text-danger fs-5 fw-bold">&#x20AB;25.130</span></div>
+                  <div>
+                    <button class="btn btn-outline-danger btn-sm me-2">H&#x1EE7;y &Dstrok;&#x1A1;n H&agrave;ng</button>
+                    <button class="btn btn-outline-primary btn-sm">Li&ecirc;n H&#x1EC7; Ng&#x1B0;&#x1EDD;i B&aacute;n</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more order items here-->
+            </div>
+            <!-- Processing Orders-->
+            <div class="tab-pane fade" id="processing" role="tabpanel">
+              <p class="text-center text-muted">Kh&ocirc;ng c&oacute; &dstrok;&#x1A1;n h&agrave;ng &dstrok;ang x&#x1EED; l&yacute;.</p>
+            </div>
+            <!-- Shipping Orders-->
+            <div class="tab-pane fade" id="shipping" role="tabpanel">
+              <!-- Header: Shop Information-->
+              <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+                <div class="d-flex align-items-center"><img class="rounded-circle me-2" src="https://via.placeholder.com/40" alt="Shop Logo"><strong class="shop-name">mycover.vn</strong></div>
+                <div>
+                  <button class="btn btn-outline-secondary btn-sm me-2">Chat</button>
+                  <button class="btn btn-outline-secondary btn-sm">Xem Shop</button>
+                </div>
+              </div>
+              <!-- Product Information-->
+              <div class="d-flex">
+                <!-- Product Image-->
+                <div class="me-3"><img class="rounded" src="https://via.placeholder.com/80" alt="Product Image"></div>
+                <!-- Product Details-->
+                <div class="flex-grow-1">
+                  <h6 class="product-title mb-1">&#x1ED0;p &dstrok;i&#x1EC7;n tho&#x1EA1;i T&#x1EEB; T&iacute;nh Trong Su&#x1ED1;t Cho iPhone 11 15 12 13 Pro Max...</h6>
+                  <p class="product-category text-muted mb-1">Ph&acirc;n lo&#x1EA1;i h&agrave;ng: M&agrave;u h&#x1ED3;ng nh&#x1EA1;t, iPhone 11</p>
+                  <p class="product-price text-muted mb-1">Gi&aacute;:
+                    <del>&#x20AB;66.000</del><span class="text-danger">&#x20AB;17.900</span>
+                  </p>
+                  <p class="product-quantity text-muted mb-1">S&#x1ED1; l&#x1B0;&#x1EE3;ng: x1</p>
+                </div>
+                <!-- Order Status-->
+                <div class="text-end"><span class="badge bg-warning text-dark order-status">V&#x1EAD;n chuy&#x1EC3;n</span>
+                  <p class="text-muted small mt-1">[Qu&#x1ED1;c T&#x1EBF;] Ng&#x1B0;&#x1EDD;i g&#x1EED;i &dstrok;ang chu&#x1EA9;n b&#x1ECB; h&agrave;ng</p>
+                </div>
+              </div>
+              <!-- Order Footer-->
+              <div class="border-top pt-3 mt-3">
+                <p class="text-muted small mb-2">&Dstrok;&#x1A1;n h&agrave;ng s&#x1EBD; &dstrok;&#x1B0;&#x1EE3;c chu&#x1EA9;n b&#x1ECB; v&agrave; chuy&#x1EC3;n &dstrok;i tr&#x1B0;&#x1EDB;c<strong>30-11-2024</strong>.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div><span class="text-muted">Th&agrave;nh ti&#x1EC1;n:</span><span class="text-danger fs-5 fw-bold">&#x20AB;25.130</span></div>
+                  <div>
+                    <button class="btn btn-outline-danger btn-sm me-2">H&#x1EE7;y &Dstrok;&#x1A1;n H&agrave;ng</button>
+                    <button class="btn btn-outline-primary btn-sm">Li&ecirc;n H&#x1EC7; Ng&#x1B0;&#x1EDD;i B&aacute;n</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Delivered Orders-->
+            <div class="tab-pane fade" id="delivered" role="tabpanel">
+              <!-- Header: Shop Information-->
+              <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-danger btn-sm me-2">Y&ecirc;u th&iacute;ch</button><strong class="shop-name">Topick Global</strong>
+                </div>
+                <div>
+                  <button class="btn btn-outline-secondary btn-sm me-2">Chat</button>
+                  <button class="btn btn-outline-secondary btn-sm">Xem Shop</button>
+                </div>
+              </div>
+              <!-- Product Information-->
+              <div class="d-flex">
+                <!-- Product Image-->
+                <div class="me-3"><img class="rounded" src="https://via.placeholder.com/80" alt="Product Image"></div>
+                <!-- Product Details-->
+                <div class="flex-grow-1">
+                  <h6 class="product-title mb-1">B&#x1ED9; chuy&#x1EC3;n &dstrok;&#x1ED5;i USB C sang USB 2 g&oacute;i, &Dstrok;&#x1EA7;u n&#x1ED1;i nam USB-A sang USB-C...</h6>
+                  <p class="product-category text-muted mb-1">Ph&acirc;n lo&#x1EA1;i h&agrave;ng: M&agrave;u x&aacute;m</p>
+                  <p class="product-price text-muted mb-1">Gi&aacute;:
+                    <del>&#x20AB;19.000</del><span class="text-danger">&#x20AB;15.000</span>
+                  </p>
+                  <p class="product-quantity text-muted mb-1">S&#x1ED1; l&#x1B0;&#x1EE3;ng: x2</p>
+                </div>
+                <!-- Order Status-->
+                <div class="text-end"><span class="badge bg-success order-status">Giao h&agrave;ng th&agrave;nh c&ocirc;ng</span>
+                  <button class="btn btn-outline-primary btn-sm mt-2">&Dstrok;&aacute;nh Gi&aacute;</button>
+                </div>
+              </div>
+              <!-- Order Footer-->
+              <div class="border-top pt-3 mt-3">
+                <p class="text-muted small mb-2">Voucher<strong>&#x20AB;15.000</strong> &dstrok;&atilde; &dstrok;&#x1B0;&#x1EE3;c l&#x1B0;u v&#x1EC1; Kho Voucher c&#x1EE7;a b&#x1EA1;n. H&atilde;y s&#x1EED; d&#x1EE5;ng &dstrok;&#x1EC3; mua s&#x1EAF;m ngay nh&eacute;!</p>
+                <p class="text-muted small">&Dstrok;ang ch&#x1EDD; Ng&#x1B0;&#x1EDD;i b&aacute;n &dstrok;&aacute;nh gi&aacute;</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div><span class="text-muted">Th&agrave;nh ti&#x1EC1;n:</span><span class="text-danger fs-5 fw-bold">&#x20AB;30.000</span></div>
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-danger btn-sm me-2">Mua L&#x1EA1;i</button>
+                    <button class="btn btn-outline-secondary btn-sm me-2">Y&ecirc;u C&#x1EA7;u Tr&#x1EA3; H&agrave;ng/Ho&agrave;n Ti&#x1EC1;n</button>
+                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" data-bs-toggle="dropdown">Th&ecirc;m</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Xem Chi Ti&#x1EBF;t</a></li>
+                      <li><a class="dropdown-item" href="#">Kh&aacute;c</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Canceled Orders-->
+            <div class="tab-pane fade" id="canceled" role="tabpanel">
+              <p class="text-center text-muted">Kh&ocirc;ng c&oacute; &dstrok;&#x1A1;n h&agrave;ng b&#x1ECB; h&#x1EE7;y.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="d-flex justify-content-center my-5 mb-lg-5"><img class="img-logo" src="client/images/logo.png"></div>
+      <div class="text-center mb-4">Subscribe to be informed about token<br>sale in advance</div>
+      <div class="row mx-0">
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="input-group mb-3 rounded-5">
+            <input class="form-control rounded-start-5" type="text" placeholder="Email"><span class="input-group-text p-0 rounded-end-5">
+              <button class="btn btn-john px-4 py-2 rounded-5" type="submit">Subscribe</button></span>
+          </div>
+          <div class="socical-group d-flex justify-content-center py-3"><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-facebook-f"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-reddit-alien"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-youtube"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-x-twitter"></i></div></a><a class="mx-2" href="javascript:void(0)">
+              <div class="socical-box hvr-float"><i class="fa-brands fa-telegram"></i></div></a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- main js-->
+    <script src="client/js/all.min.js"></script>
+    <script src="client/js/jquery.min.js"></script>
+    <script src="client/js/bootstrap.bundle.min.js"></script>
+    <script src="client/js/moment.js"></script>
+    <script src="client/slick/slick.js"></script>
+    <script src="client/js/main.js"></script>
+    <script>
+      $(function () {
+          if ($(window).width() > 769) {
+              $('.menu .dropdown > a').click(function () {
+                  location.href = this.href;
+              });
+          }
+      })
+    </script>
+  </body>
+</html>
