@@ -1,0 +1,36 @@
+extends _layouts/master-vp
+
+block content
+    section
+        .container.my-5
+            h2.text-center.mb-4 Update Products
+            .table-container
+                table.table.table-striped.table-bordered
+                    thead.table-dark
+                        tr
+                            th ID
+                            th T&ecirc;n S&#x1EA3;n Ph&#x1EA9;m
+                            th Gi&aacute;
+                            th Tr&#x1EA1;ng Th&aacute;i
+                            th Ng&agrave;y C&#x1EAD;p Nh&#x1EAD;t
+                            th H&agrave;nh &Dstrok;&#x1ED9;ng
+                    tbody
+                        tr
+                            td 001
+                            td
+                                input.form-control(type='text' value='Laptop Dell')
+                            td
+                                input.form-control(type='number' value='20000000')
+                            td
+                                select.form-select
+                                    option(value='active' selected='') Ho&#x1EA1;t &dstrok;&#x1ED9;ng
+                                    option(value='inactive') Kh&ocirc;ng ho&#x1EA1;t &dstrok;&#x1ED9;ng
+                            td 22/11/2024
+                            td.action-buttons
+                                button.btn.btn-success.btn-sm
+                                    i.fas.fa-save
+                                    |  L&#x1B0;u
+                                button.btn.btn-danger.btn-sm
+                                    i.fas.fa-trash
+                                    |  X&oacute;a
+

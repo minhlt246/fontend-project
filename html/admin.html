@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>urban-man-admin</title>
+    <link rel="icon" href="./client/images/favicon.webp" type="image/gif" sizes="16x16">
+    <!-- main css-->
+    <link rel="stylesheet" href="client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/all.min.css">
+    <link rel="stylesheet" href="client/css/hover-min.css">
+    <link rel="stylesheet" href="client/css/flag-icons.min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/slick/slick.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/slick/slick.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="office">
+      <div class="d-lg-flex">
+        <div class="flex-shrink-1 d-none d-lg-block">
+          <div class="menu">
+            <div class="offcanvas-header p-0"><img class="w-100" src="client/images/logo-vp.png"></div>
+            <div class="offcanvas-body pt-4">
+              <ul class="nav flex-column side-menu">
+                <!-- Sidebar - Brand--><a class="sidebar-brand d-flex align-items-center justify-content-center text-white fs-1" href="index.html">
+                  <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                  <div class="sidebar-brand-text mx-3 fs-5"> Admin</div></a>
+                <!-- Nav Item - Dashboard-->
+                <li class="nav-item active"><a class="nav-link" href=""><i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                <!-- Nav Item - Pages Collapse Menu-->
+                <li class="nav-item"><a class="nav-link collapsed hvr-forward py-3" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><i class="fas fa-fw fa-cog"></i><span>Custom Product</span></a>
+                  <div class="collapse mx-2" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                      <h6 class="collapse-header">Custom Product:</h6><a class="collapse-item ms-2" href="">Add Product</a><a class="collapse-item ms-2" href="">Add Category</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link collapsed hvr-forward py-3" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><i class="fas fa-fw fa-cog"></i><span>New</span></a>
+                  <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                      <h6 class="collapse-header">Custom Components:</h6><a class="collapse-item ms-2" href="profile.html">Profile</a><a class="collapse-item ms-2" href="">New Product</a><a class="collapse-item ms-2" href="">Update</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link hvr-forward py-3" href="index.html"><i class="fa-solid fa-backward me-3"></i>Back To Website</a></li>
+                <li class="nav-item"><a class="nav-link hvr-forward py-3" href="login.html"><i class="fa-solid fa-right-from-bracket me-3"></i>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="office-main">
+          <header>
+            <div class="offcanvas offcanvas-start menu" id="menu-vp" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header p-0"><img class="w-100" src="client/images/logo-vp.png"></div>
+              <div class="offcanvas-body pt-4">
+                <ul class="nav flex-column side-menu">
+                  <!-- Sidebar - Brand--><a class="sidebar-brand d-flex align-items-center justify-content-center text-white fs-1" href="index.html">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3 fs-5"> Admin</div></a>
+                  <!-- Nav Item - Dashboard-->
+                  <li class="nav-item active"><a class="nav-link" href=""><i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                  <!-- Nav Item - Pages Collapse Menu-->
+                  <li class="nav-item"><a class="nav-link collapsed hvr-forward py-3" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><i class="fas fa-fw fa-cog"></i><span>Custom Product</span></a>
+                    <div class="collapse mx-2" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebar">
+                      <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                        <h6 class="collapse-header">Custom Product:</h6><a class="collapse-item ms-2" href="">Add Product</a><a class="collapse-item ms-2" href="">Add Category</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link collapsed hvr-forward py-3" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><i class="fas fa-fw fa-cog"></i><span>New</span></a>
+                    <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionSidebar">
+                      <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                        <h6 class="collapse-header">Custom Components:</h6><a class="collapse-item ms-2" href="profile.html">Profile</a><a class="collapse-item ms-2" href="">New Product</a><a class="collapse-item ms-2" href="">Update</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link hvr-forward py-3" href="index.html"><i class="fa-solid fa-backward me-3"></i>Back To Website</a></li>
+                  <li class="nav-item"><a class="nav-link hvr-forward py-3" href="login.html"><i class="fa-solid fa-right-from-bracket me-3"></i>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex d-lg-none justify-content-end">
+              <button class="btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu-vp"><i class="fa-solid fa-bars fa-2x text-dark"></i></button>
+            </div>
+          </header>
+          <section>
+            <div class="mt-lg-3 mb-4 px-2">
+              <div class="row">
+                <div class="flex-grow-1 d-flex flex-column" id="content-wrapper">
+                  <!-- Main Content-->
+                  <div id="content">
+                    <!-- Topbar-->
+                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 shadow">
+                      <!-- Topbar Search-->
+                      <form class="d-none d-sm-inline-block form-inline me-auto my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                          <input class="form-control bg-light border-0 small" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                          <button class="btn btn-primary" type="button"><i class="fas fa-search fa-sm"></i></button>
+                        </div>
+                      </form>
+                      <!-- Topbar Navbar-->
+                      <ul class="navbar-nav ms-auto">
+                        <!-- Nav Item - Search Dropdown (Visible Only XS)-->
+                        <li class="nav-item dropdown no-arrow d-sm-none"><a class="nav-link dropdown-toggle" id="searchDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-search fa-fw"></i></a>
+                          <div class="dropdown-menu dropdown-menu-end p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                            <form class="form-inline me-auto w-100 navbar-search">
+                              <div class="input-group">
+                                <input class="form-control bg-light border-0 small" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                <button class="btn btn-primary" type="button"><i class="fas fa-search fa-sm"></i></button>
+                              </div>
+                            </form>
+                          </div>
+                        </li>
+                        <!-- Nav Item - Alerts-->
+                        <li class="nav-item dropdown no-arrow mx-1"><a class="nav-link dropdown-toggle" id="alertsDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bell fa-fw"></i><span class="badge bg-danger badge-counter">3+</span></a>
+                          <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="me-3">
+                                <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
+                              </div>
+                              <div>
+                                <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
+                              </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="me-3">
+                                <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
+                              </div>
+                              <div>
+                                <div class="small text-gray-500">December 7, 2019</div>                                    $290.29 has been deposited into your account!
+                              </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="me-3">
+                                <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                              </div>
+                              <div>
+                                <div class="small text-gray-500">December 2, 2019</div>                                    Spending Alert: We&apos;ve noticed unusually high spending for your account.
+                              </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                          </div>
+                        </li>
+                        <!-- Nav Item - Messages-->
+                        <li class="nav-item dropdown no-arrow mx-1"><a class="nav-link dropdown-toggle" id="messagesDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-envelope fa-fw"></i><span class="badge bg-danger badge-counter">7</span></a>
+                          <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                            <h6 class="dropdown-header">Message Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="dropdown-list-image me-3"><img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                <div class="status-indicator bg-success"></div>
+                              </div>
+                              <div class="font-weight-bold">
+                                <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I&apos;ve been having.</div>
+                                <div class="small text-gray-500">Emily Fowler &middot; 58m</div>
+                              </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="dropdown-list-image me-3"><img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                <div class="status-indicator"></div>
+                              </div>
+                              <div>
+                                <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                                <div class="small text-gray-500">Jae Chun &middot; 1d</div>
+                              </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="dropdown-list-image me-3"><img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                <div class="status-indicator bg-warning"></div>
+                              </div>
+                              <div>
+                                <div class="text-truncate">Last month&apos;s report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                                <div class="small text-gray-500">Morgan Alvarez &middot; 2d</div>
+                              </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                          </div>
+                        </li>
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <!-- Nav Item - User Information-->
+                        <li class="nav-item dropdown no-arrow"><a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span><img class="img-profile rounded-circle" src="img/undraw_profile.svg"></a>
+                          <div class="dropdown-menu dropdown-menu-end shadow animated--grow-in" aria-labelledby="userDropdown"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>                                Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>                                Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>                                Activity Log</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>                                Logout</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- End of Topbar-->
+                    <!-- Begin Page Content-->
+                    <div class="container-fluid">
+                      <!-- Page Heading-->
+                      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1><a class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="#"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                      </div>
+                      <!-- Content Row-->
+                      <div class="row">
+                        <!-- Earnings (Monthly) Card Example-->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                  <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
+                                  <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Earnings (Annual) Card Example-->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                  <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
+                                  <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Tasks Card Example-->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                  <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
+                                  <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="progress progress-sm mr-2">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Pending Requests Card Example-->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                  <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
+                                  <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Content Row-->
+                      <div class="row">
+                        <!-- Area Chart-->
+                        <div class="col-xl-8 col-lg-7">
+                          <div class="card shadow mb-4">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                              <div class="dropdown no-arrow"><a class="dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                  <div class="dropdown-header">Dropdown Header:</div><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+                                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <canvas class="chartjs-render-monitor" id="myAreaChart" width="711" height="320" style="display: block; width: 711px; height: 320px;"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Pie Chart-->
+                        <div class="col-xl-4 col-lg-5">
+                          <div class="card shadow mb-4">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                              <div class="dropdown no-arrow"><a class="dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                  <div class="dropdown-header">Dropdown Header:</div><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+                                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-pie pt-4 pb-2">
+                                <canvas id="myPieChart"></canvas>
+                              </div>
+                              <div class="mt-4 text-center small"><span class="me-2"><i class="fas fa-circle text-primary"></i> Direct</span><span class="me-2"><i class="fas fa-circle text-success"></i> Social</span><span class="me-2"><i class="fas fa-circle text-info"></i> Referral</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Content Row-->
+                      <div class="row">
+                        <!-- Content</body></html>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="text-center text-dark"><span>© The CICFunding Trader,</span><br class="d-md-none"><span>2024, All Rights Reserved.</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- main js-->
+    <script src="client/js/sb-admin-2.min.js"></script>
+    <script src="client/js/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="client/js/vendor/chart.js/Chart.min.js"></script>
+    <script src="client/js/demo/chart-area-demo.js"></script>
+    <script src="client/js/demo/chart-pie-demo.js"></script>
+    <script src="client/js/demo/chart-bar-demo.js"></script>
+    <script src="client/js/demo/datatables-demo.js"></script>
+    <script src="client/js/all.min.js"></script>
+    <script src="client/js/jquery.min.js"></script>
+    <script src="client/js/bootstrap.bundle.min.js"></script>
+    <script src="client/js/moment.min.js"></script>
+    <script src="client/slick/slick.js"></script>
+    <script src="client/js/main.js"></script>
+    <script src="client/js/demo/chart-pie-demo.js"></script>
+    <script>
+      $(function () {
+          if ($(window).width() > 769) {
+              $('.menu .dropdown > a').click(function () {
+                  location.href = this.href;
+              });
+          }
+      })
+    </script>
+  </body>
+</html>

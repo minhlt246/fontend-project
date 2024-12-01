@@ -1,49 +1,19 @@
-//Get the button:
-var mybutton = document.getElementById("backtop");
-var scroll = document.getElementsByClassName("content")
-// var linemenu = document.getElementById("menu");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-  // scrollmenu()
-  // if ($(window).width() > 769) {
-  //
-  // }
-};
-
-$(scroll).scroll(function() {
-  if ($(scroll).scrollTop() > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-});
-
-function scrollFunction() {
-
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function scrollmenu() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    linemenu.classList.remove("invisible")
-
-  } else {
-    linemenu.classList.add("invisible")
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function backtotop() {
-  $('.content').animate({scrollTop:0}, '300');
-}
 
 $(document).ready(function(){
+  // Show or hide the button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+
+  // Scroll to the top when the button is clicked
+  $('#back-to-top').click(function() {
+    $('html, body').animate({scrollTop: 0}, 100);
+    return false;
+  });
 
 //play/pause on double click on the video
   $('video').on('click', function (e) {
@@ -75,7 +45,7 @@ $(document).ready(function(){
 //active-link
 jQuery(function ($) {
   var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
-  $('.menu li a').each(function () {
+  $('.side-menu li a').each(function () {
     if (this.href === path) {
       $(this).addClass('active');
     }
@@ -87,7 +57,7 @@ $(document).ready(function () {
   $('.responsive').slick({
     // dots: true,
     infinite: true,
-    speed: 250,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -185,14 +155,48 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+$(document).ready(function () {
+  // Iterate over each .sparkline element
+  $('.sparkline-up').each(function () {
+    // Get data from the data-values attribute
+    var data = $(this).data('values');
+    // Convert string to array if needed
+    if (typeof data === 'string') {
+      data = JSON.parse(data);
+    }
+    // Initialize sparkline with the extracted data
+    $(this).sparkline(data, {
+      type: 'line',
+      fillColor: false,
+      spotColor: false,
+      minSpotColor: false,
+      lineColor: '#1acc4e',
+      width: '200',
+      height: '30',
+      maxSpotColor: false
+    });
+  });
 
-//
-// const progress = document.querySelector('.progress-1');
-//
-// progress.addEventListener('input', function() {
-//   const value = this.value;
-//   this.style.background = `linear-gradient(to right, #001A3E 0%, #001A3E ${value}%, #fff ${value}%, white 100%)`
-// })
+  $('.sparkline-down').each(function () {
+    // Get data from the data-values attribute
+    var data = $(this).data('values');
+    // Convert string to array if needed
+    if (typeof data === 'string') {
+      data = JSON.parse(data);
+    }
+    // Initialize sparkline with the extracted data
+    $(this).sparkline(data, {
+      type: 'line',
+      fillColor: false,
+      spotColor: false,
+      minSpotColor: false,
+      lineColor: '#cd0d0d',
+      width: '200',
+      height: '30',
+      maxSpotColor: false
+    });
+  });
+});
 
 function countdown(timeInSeconds) {
     var timer = timeInSeconds, hours, minutes, seconds;
@@ -288,48 +292,3 @@ $.fn.extend({
 
 //Initialization of treeviews
 $('#tree1').treed();
-
-// script.js
-document.addEventListener("DOMContentLoaded", function () {
-  const stars = document.querySelectorAll(".star");
-  const ratingDisplay = document.getElementById("rating-display");
-
-  stars.forEach((star) => {
-    star.addEventListener("click", function () {
-      const rating = this.getAttribute("data-value");
-      updateRating(rating);
-    });
-
-    star.addEventListener("mouseover", function () {
-      highlightStars(this.getAttribute("data-value"));
-    });
-
-    star.addEventListener("mouseout", function () {
-      resetStars();
-    });
-  });
-
-  function updateRating(rating) {
-    stars.forEach((star) => {
-      star.classList.remove("selected");
-      if (star.getAttribute("data-value") <= rating) {
-        star.classList.add("selected");
-      }
-    });
-    ratingDisplay.innerText = `Rating: ${rating}`;
-  }
-
-  function highlightStars(rating) {
-    stars.forEach((star) => {
-      star.style.color = star.getAttribute("data-value") <= rating ? "gold" : "lightgray";
-    });
-  }
-
-  function resetStars() {
-    stars.forEach((star) => {
-      star.style.color = star.classList.contains("selected") ? "gold" : "lightgray";
-    });
-  }
-});
-
-

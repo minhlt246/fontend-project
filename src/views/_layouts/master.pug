@@ -16,6 +16,9 @@ html
         link(rel='stylesheet' href='client/css/flag-icons.min.css')
         link(rel='stylesheet' href='client/css/style.css')
         link(rel='stylesheet' href='client/slick/slick.css')
+        link(rel='stylesheet' href='client/css/style.css')
+        link(rel='stylesheet' href='client/slick/slick.css')
+
         //link(rel='stylesheet' href='client/fonts/fontstyle.css')
         link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli:300,400,600,700&subset=latin,latin-ext' type='text/css' media='all')
 
@@ -25,12 +28,21 @@ html
         block content
         include ../_partials/footer
         // main js
+        script(src='client/js/sb-admin-2.min.js')
+        script(src='client/js/vendor/jquery-easing/jquery.easing.min.js')
+        script(src='client/js/vendor/chart.js/Chart.min.js')
+        script(src='client/js/demo/chart-area-demo.js')
+        script(src='client/js/demo/chart-pie-demo.js')
+        script(src='client/js/demo/chart-bar-demo.js')
+        script(src='client/js/demo/datatables-demo.js')
         script(src='client/js/all.min.js')
         script(src='client/js/jquery.min.js')
         script(src='client/js/bootstrap.bundle.min.js')
-        script(src='client/js/moment.js')
+        script(src='client/js/moment.min.js')
         script(src='client/slick/slick.js')
         script(src='client/js/main.js')
+        script(src='client/js/demo/chart-pie-demo.js')
+
         script.
             $(function () {
                 if ($(window).width() > 769) {

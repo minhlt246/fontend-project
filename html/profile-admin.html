@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>urban-man-admin</title>
+    <link rel="icon" href="./client/images/favicon.webp" type="image/gif" sizes="16x16">
+    <!-- main css-->
+    <link rel="stylesheet" href="client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/all.min.css">
+    <link rel="stylesheet" href="client/css/hover-min.css">
+    <link rel="stylesheet" href="client/css/flag-icons.min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/slick/slick.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/slick/slick.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="office">
+      <div class="d-lg-flex">
+        <div class="flex-shrink-1 d-none d-lg-block">
+          <div class="menu">
+            <div class="offcanvas-header p-0"><img class="w-100" src="client/images/logo-vp.png"></div>
+            <div class="offcanvas-body pt-4">
+              <ul class="nav flex-column side-menu">
+                <!-- Sidebar - Brand--><a class="sidebar-brand d-flex align-items-center justify-content-center text-white fs-1" href="index.html">
+                  <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                  <div class="sidebar-brand-text mx-3 fs-5"> Admin</div></a>
+                <!-- Nav Item - Dashboard-->
+                <li class="nav-item active"><a class="nav-link" href=""><i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                <!-- Nav Item - Pages Collapse Menu-->
+                <li class="nav-item"><a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><i class="fas fa-fw fa-cog"></i><span>Custom Product</span></a>
+                  <div class="collapse mx-2" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                      <h6 class="collapse-header">Custom Product:</h6><a class="collapse-item ms-2" href="">Add Product</a><a class="collapse-item ms-2" href="">Add Category</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><i class="fas fa-fw fa-cog"></i><span>New</span></a>
+                  <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                      <h6 class="collapse-header">Custom Components:</h6><a class="collapse-item ms-2" href="profile.html">Profile</a><a class="collapse-item ms-2" href="">New Product</a><a class="collapse-item ms-2" href="">Update</a>
+                    </div>
+                  </div>
+                </li>                            &ZeroWidthSpace;
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="office-main">
+          <header>
+            <div class="offcanvas offcanvas-start menu" id="menu-vp" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header p-0"><img class="w-100" src="client/images/logo-vp.png"></div>
+              <div class="offcanvas-body pt-4">
+                <ul class="nav flex-column side-menu">
+                  <!-- Sidebar - Brand--><a class="sidebar-brand d-flex align-items-center justify-content-center text-white fs-1" href="index.html">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3 fs-5"> Admin</div></a>
+                  <!-- Nav Item - Dashboard-->
+                  <li class="nav-item active"><a class="nav-link" href=""><i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                  <!-- Nav Item - Pages Collapse Menu-->
+                  <li class="nav-item"><a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><i class="fas fa-fw fa-cog"></i><span>Custom Product</span></a>
+                    <div class="collapse mx-2" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebar">
+                      <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                        <h6 class="collapse-header">Custom Product:</h6><a class="collapse-item ms-2" href="">Add Product</a><a class="collapse-item ms-2" href="">Add Category</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><i class="fas fa-fw fa-cog"></i><span>New</span></a>
+                    <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionSidebar">
+                      <div class="bg-white py-2 collapse-inner rounded-3 mx-2">
+                        <h6 class="collapse-header">Custom Components:</h6><a class="collapse-item ms-2" href="profile.html">Profile</a><a class="collapse-item ms-2" href="">New Product</a><a class="collapse-item ms-2" href="">Update</a>
+                      </div>
+                    </div>
+                  </li>                            &ZeroWidthSpace;
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex d-lg-none justify-content-end">
+              <button class="btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu-vp"><i class="fa-solid fa-bars fa-2x text-dark"></i></button>
+            </div>
+          </header>
+          <section>
+            <div class="container rounded bg-info mt-5 mb-5 bg-profile">
+              <div class="row">
+                <div class="col-md-3 border-right">
+                  <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black">edogaru@mail.com.my</span><span></span></div>
+                </div>
+                <div class="col-md-5 border-right">
+                  <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-md-6">
+                        <label class="labels">Name</label>
+                        <input class="form-control" type="text" placeholder="first name" value="">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="labels">Surname</label>
+                        <input class="form-control" type="text" value="" placeholder="surname">
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-md-12">
+                        <label class="labels">Mobile Number</label>
+                        <input class="form-control" type="text" placeholder="enter phone number" value="">
+                      </div>
+                      <div class="col-md-12">
+                        <label class="labels">Address Line 1</label>
+                        <input class="form-control" type="text" placeholder="enter address line 1" value="">
+                      </div>
+                      <div class="col-md-12">
+                        <label class="labels">Address Line 2</label>
+                        <input class="form-control" type="text" placeholder="enter address line 2" value="">
+                      </div>
+                      <div class="col-md-12">
+                        <label class="labels">Postcode</label>
+                        <input class="form-control" type="text" placeholder="enter address line 2" value="">
+                      </div>
+                      <div class="col-md-12">
+                        <label class="labels">State</label>
+                        <input class="form-control" type="text" placeholder="enter address line 2" value="">
+                      </div>
+                      <div class="col-md-12">
+                        <label class="labels">Area</label>
+                        <input class="form-control" type="text" placeholder="enter address line 2" value="">
+                      </div>
+                      <div class="col-md-12">
+                        <label class="labels">Email ID</label>
+                        <input class="form-control" type="text" placeholder="enter email id" value="">
+                      </div>
+                      <div class="col-md-12">
+                        <label class="labels">Education</label>
+                        <input class="form-control" type="text" placeholder="education" value="">
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-md-6">
+                        <label class="labels">Country</label>
+                        <input class="form-control" type="text" placeholder="country" value="">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="labels">State/Region</label>
+                        <input class="form-control" type="text" value="" placeholder="state">
+                      </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                      <button class="btn btn-primary profile-button" type="button">Save Profile</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center experience text-black"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
+                    <div class="col-md-12">
+                      <label class="labels">Experience in Designing</label>
+                      <input class="form-control" type="text" placeholder="experience" value="">
+                    </div><br>
+                    <div class="col-md-12">
+                      <label class="labels">Additional Details</label>
+                      <input class="form-control" type="text" placeholder="additional details" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="text-center text-dark"><span>© The CICFunding Trader,</span><br class="d-md-none"><span>2024, All Rights Reserved.</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- main js-->
+    <script src="client/js/sb-admin-2.min.js"></script>
+    <script src="client/js/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="client/js/vendor/chart.js/Chart.min.js"></script>
+    <script src="client/js/demo/chart-area-demo.js"></script>
+    <script src="client/js/demo/chart-pie-demo.js"></script>
+    <script src="client/js/demo/chart-bar-demo.js"></script>
+    <script src="client/js/demo/datatables-demo.js"></script>
+    <script src="client/js/all.min.js"></script>
+    <script src="client/js/jquery.min.js"></script>
+    <script src="client/js/bootstrap.bundle.min.js"></script>
+    <script src="client/js/moment.min.js"></script>
+    <script src="client/slick/slick.js"></script>
+    <script src="client/js/main.js"></script>
+    <script src="client/js/demo/chart-pie-demo.js"></script>
+    <script>
+      $(function () {
+          if ($(window).width() > 769) {
+              $('.menu .dropdown > a').click(function () {
+                  location.href = this.href;
+              });
+          }
+      })
+    </script>
+  </body>
+</html>
