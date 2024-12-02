@@ -17,9 +17,9 @@ block content
                                 th Ngày Cập Nhật
                                 th Hành Động
                         tbody
-                            - for (var i = 0; i < 8; ++i)
+                            each i in [...Array(10).keys()]
                                 tr
-                                    td 001
+                                    td #{(i + 1).toString().padStart(3, '0')}
                                     td
                                         input.form-control(type='text' placeholder ='name')
                                     td
