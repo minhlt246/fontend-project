@@ -1,0 +1,38 @@
+extends _layouts/master-vp
+
+block content
+    .update-category
+        .container.my-5
+            h2.text-center.mb-4 Update Products
+            .container.my-5
+                h2.text-center.mb-4 Cập Nhật Danh Mục
+                .table-container
+                    table.table.table-striped.table-bordered
+                        thead.table-dark
+                            tr
+                                th ID
+                                th Tên Danh Mục
+                                th Mô Tả
+                                th Trạng Thái
+                                th Ngày Cập Nhật
+                                th Hành Động
+                        tbody
+                            - for (var i = 0; i < 8; ++i)
+                                tr
+                                    td 001
+                                    td
+                                        input.form-control(type='text' value='Điện thoại')
+                                    td
+                                        input.form-control(type='text' value='Danh mục sản phẩm điện thoại')
+                                    td
+                                        select.form-select
+                                            option(value='active', selected='') Hoạt động
+                                            option(value='inactive') Không hoạt động
+                                    td 22/11/2024
+                                    td.action-buttons
+                                        button.btn.btn-success.btn-sm
+                                            i.fas.fa-save
+                                            | Lưu
+                                        button.btn.btn-danger.btn-sm
+                                            i.fas.fa-trash
+                                            | Xóa
