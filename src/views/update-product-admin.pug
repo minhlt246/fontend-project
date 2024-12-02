@@ -15,10 +15,9 @@ block content
                             th Ng&agrave;y C&#x1EAD;p Nh&#x1EAD;t
                             th H&agrave;nh &Dstrok;&#x1ED9;ng
                     tbody
-                        - for (var i = 0; i < 8; ++i)
+                        each i in [...Array(10).keys()]
                             tr
-
-                                td 001
+                                td #{(i + 1).toString().padStart(3, '0')}
                                 td
                                     input.form-control(type='text' value='Laptop Dell')
                                 td
