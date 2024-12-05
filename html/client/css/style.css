@@ -43,6 +43,13 @@ button:focus:not(:focus-visible) {
 .navbar-toggler:focus {
   box-shadow: none; }
 
+.btn.border-secondary {
+  transition: 0.5s; }
+
+.btn.border-secondary:hover {
+  background: var(--bs-secondary) !important;
+  color: var(--bs-white) !important; }
+
 .form-control {
   display: block;
   width: 100%;
@@ -568,32 +575,76 @@ section .product .product-tags .nav-item .active {
   transition: 0.5s; }
 
 section .product .product-item {
-  position: relative;
-  background: #FFFFFF;
-  border-radius: 16px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0);
-  transition: box-shadow 0.3s ease-out, margin 0.6s ease-out; }
-  section .product .product-item:hover .button-area {
-    display: block; }
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  section .product .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); }
+  section .product .product-item figure {
+    margin-bottom: 1rem; }
+    section .product .product-item figure a img {
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 200px;
+      transition: transform 0.3s ease; }
+    section .product .product-item figure:hover img {
+      transform: scale(1.05); }
+  section .product .product-item .product-details {
+    padding: 0.5rem 1rem; }
+    section .product .product-item .product-details .product-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333333;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    section .product .product-item .product-details .rating i {
+      font-size: 1rem; }
+    section .product .product-item .product-details .rating .rating-count {
+      font-size: 0.875rem;
+      color: #6c757d; }
+    section .product .product-item .product-details .price-info del.old-price {
+      font-size: 0.9rem;
+      color: #999999; }
+    section .product .product-item .product-details .price-info .new-price {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #28a745; }
+    section .product .product-item .product-details .price-info .discount-badge {
+      font-size: 0.75rem;
+      background-color: #dc3545;
+      color: #ffffff;
+      padding: 2px 6px;
+      border-radius: 5px; }
   section .product .product-item .button-area {
-    display: none;
-    position: absolute;
-    text-align: center;
-    background: #fff;
-    width: 100%;
-    left: 0;
-    bottom: -60px;
-    z-index: 1;
-    box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.08);
-    border: none; }
-    section .product .product-item .button-area .btn-cart {
-      text-wrap: nowrap;
-      height: 3.3em;
-      line-height: 2em;
-      width: 100%; }
-    section .product .product-item .button-area .quantity {
-      padding: 0.5rem; }
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+    section .product .product-item .button-area .quantity-input {
+      width: 60px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 1rem; }
+    section .product .product-item .button-area .add-to-cart-btn {
+      flex-grow: 1;
+      background-color: #007bff;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 0.5rem;
+      text-align: center;
+      border-radius: 5px; }
+      section .product .product-item .button-area .add-to-cart-btn:hover {
+        background-color: #0056b3; }
+    section .product .product-item .button-area .wishlist-btn {
+      padding: 0.5rem;
+      color: #6c757d;
+      border-radius: 5px; }
+      section .product .product-item .button-area .wishlist-btn:hover {
+        color: #ff5722; }
 
 section .contact .header-content {
   margin-top: 30px;
@@ -857,73 +908,78 @@ section .login .custom-login-container .custom-card-wrapper .custom-card {
       text-decoration: underline; }
 
 section .register {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  section .register .register-form {
-    height: 100%;
-    display: flex;
-    justify-content: center; }
-    @media screen and (max-width: 480px) {
-      section .register .register-form {
-        width: 100%;
-        display: block; } }
-    @media screen and (max-width: 1024px) {
-      section .register .register-form {
-        width: 100%;
-        display: block; } }
-    @media screen and (max-width: 480px) {
-      section .register .register-form .login-main {
-        height: 100px; } }
-    @media screen and (max-width: 1024px) {
-      section .register .register-form .login-main {
-        height: 100px; } }
-    @media screen and (max-width: 480px) {
-      section .register .register-form {
-        padding: 10px; } }
-    @media screen and (max-width: 1024px) {
-      section .register .register-form {
-        padding: 10px; } }
-    section .register .register-form .form {
-      background: #F5F0F0;
-      border-radius: 15px;
-      padding: 30px; }
-      section .register .register-form .form .form-title {
-        font-size: 50px;
-        text-transform: uppercase; }
-        @media (min-width: 320px) and (max-width: 479px) {
-          section .register .register-form .form .form-title {
-            font-size: 26px; } }
-      section .register .register-form .form .form-text {
-        text-align: center;
-        font-size: 15px;
-        color: #ffffff; }
-      section .register .register-form .form .input-group .input-group-text {
-        border-radius: 5px;
-        border: none;
-        background: #ffffff;
-        color: #333333; }
-      section .register .register-form .form .input-group .form-control {
-        border-radius: 5px;
-        border: none;
-        background: #ffffff;
-        color: #333333; }
-  section .register .form-check-label {
-    color: #ffffff; }
-  section .register .text-decoration-underline {
-    color: #ffffff;
-    text-decoration: underline;
-    cursor: pointer; }
-  section .register .btn-cancel {
-    background-color: #493830;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; }
-    section .register .btn-cancel:hover {
-      background-color: #5a6268; }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa; }
+  section .register .register-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+  section .register .bg-register-image {
+    background: url("path/to/your-image.jpg") no-repeat center center;
+    background-size: cover; }
+  section .register .form-section {
+    padding: 40px;
+    background-color: #ffffff; }
+    section .register .form-section .welcome-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 20px; }
+    section .register .form-section .registration-form .form-group {
+      margin-bottom: 20px; }
+      section .register .form-section .registration-form .form-group input {
+        padding: 12px 15px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        font-size: 16px;
+        border: 1px solid #dcdcdc;
+        transition: border-color 0.3s, box-shadow 0.3s; }
+        section .register .form-section .registration-form .form-group input:focus {
+          border-color: #3498db;
+          box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+          outline: none; }
+        section .register .form-section .registration-form .form-group input::placeholder {
+          color: #b0b0b0; }
+    section .register .form-section .registration-form .register-btn {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 12px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s; }
+      section .register .form-section .registration-form .register-btn:hover {
+        background-color: #217dbb; }
+    section .register .form-section .registration-form .divider {
+      margin: 20px 0;
+      border-color: #e0e0e0; }
+    section .register .form-section .registration-form .social-login-buttons a {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: background-color 0.3s; }
+      section .register .form-section .registration-form .social-login-buttons a i {
+        margin-right: 8px; }
+      section .register .form-section .registration-form .social-login-buttons a.google-btn {
+        background-color: #db4437; }
+        section .register .form-section .registration-form .social-login-buttons a.google-btn:hover {
+          background-color: #c23321; }
+      section .register .form-section .registration-form .social-login-buttons a.facebook-btn {
+        background-color: #4267b2; }
+        section .register .form-section .registration-form .social-login-buttons a.facebook-btn:hover {
+          background-color: #365899; }
+    section .register .form-section .registration-form .forgot-password-link,
+    section .register .form-section .registration-form .login-link {
+      font-size: 14px;
+      color: #3498db;
+      text-decoration: none; }
+      section .register .form-section .registration-form .forgot-password-link:hover,
+      section .register .form-section .registration-form .login-link:hover {
+        text-decoration: underline; }
 
 section .check-out .checkout-form .checkout-input input {
   width: 100%;

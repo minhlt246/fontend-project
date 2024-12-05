@@ -51,78 +51,134 @@
     </header>
     <section>
       <div class="cart my-lg-4">
-        <div class="container">
-          <ol class="breadcrumb py-4 fs-6">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Điền thông tin</a></li>
-            <li class="breadcrumb-item"><a href="#">Xác nhận</a></li>
-            <li class="breadcrumb-item active css-ilends" aria-current="page">
-              <p>Hoàn tất đơn hàng</p>
-            </li>
-          </ol>
-          <div class="checkout-form">
-            <h4 class="mb-3">Chi Tiết Giỏ Hàng</h4>
+        <div class="container py-5">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr class="text-black">
+                  <th scope="col">Products</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center"><img class="img-fluid me-5 rounded-circle" src="img/vegetable-item-3.png" style="width: 80px; height: 80px;" alt=""></div>
+                  </th>
+                  <td>
+                    <p class="mb-0 mt-4">Big Banana</p>
+                  </td>
+                  <td>
+                    <p class="mb-0 mt-4">2.99 $</p>
+                  </td>
+                  <td>
+                    <div class="input-group quantity mt-4" style="width: 100px;">
+                      <div class="input-group-btn">
+                        <button class="btn btn-sm btn-minus rounded-circle bg-light border"><i class="fa fa-minus"></i></button>
+                      </div>
+                      <input class="form-control form-control-sm text-center border-0" type="text" value="1">
+                      <div class="input-group-btn">
+                        <button class="btn btn-sm btn-plus rounded-circle bg-light border"><i class="fa fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="mb-0 mt-4">2.99 $</p>
+                  </td>
+                  <td>
+                    <button class="btn btn-md rounded-circle bg-light border mt-4"><i class="fa fa-times text-danger"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center"><img class="img-fluid me-5 rounded-circle" src="img/vegetable-item-5.jpg" style="width: 80px; height: 80px;" alt=""></div>
+                  </th>
+                  <td>
+                    <p class="mb-0 mt-4">Potatoes</p>
+                  </td>
+                  <td>
+                    <p class="mb-0 mt-4">2.99 $</p>
+                  </td>
+                  <td>
+                    <div class="input-group quantity mt-4" style="width: 100px;">
+                      <div class="input-group-btn">
+                        <button class="btn btn-sm btn-minus rounded-circle bg-light border"><i class="fa fa-minus"></i></button>
+                      </div>
+                      <input class="form-control form-control-sm text-center border-0" type="text" value="1">
+                      <div class="input-group-btn">
+                        <button class="btn btn-sm btn-plus rounded-circle bg-light border"><i class="fa fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="mb-0 mt-4">2.99 $</p>
+                  </td>
+                  <td>
+                    <button class="btn btn-md rounded-circle bg-light border mt-4"><i class="fa fa-times text-danger"></i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center"><img class="img-fluid me-5 rounded-circle" src="img/vegetable-item-2.jpg" style="width: 80px; height: 80px;" alt=""></div>
+                  </th>
+                  <td>
+                    <p class="mb-0 mt-4">Awesome Brocoli</p>
+                  </td>
+                  <td>
+                    <p class="mb-0 mt-4">2.99 $</p>
+                  </td>
+                  <td>
+                    <div class="input-group quantity mt-4" style="width: 100px;">
+                      <div class="input-group-btn">
+                        <button class="btn btn-sm btn-minus rounded-circle bg-light border"><i class="fa fa-minus"></i></button>
+                      </div>
+                      <input class="form-control form-control-sm text-center border-0" type="text" value="1">
+                      <div class="input-group-btn">
+                        <button class="btn btn-sm btn-plus rounded-circle bg-light border"><i class="fa fa-plus"></i></button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="mb-0 mt-4">2.99 $</p>
+                  </td>
+                  <td>
+                    <button class="btn btn-md rounded-circle bg-light border mt-4"><i class="fa fa-times text-danger"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="shoping-cart-table mb-5 rounded-4 p-3 bg-box">
-                <div class="table-responsive">
-                  <table class="table mb-0 table-borderless">
-                    <thead>
-                      <thead>
-                        <tr>
-                          <th class="fw-lighter text-white text-uppercase" scope="col">BTN</th>
-                          <th class="text-center fw-lighter text-white text-uppercase" scope="col">Amount</th>
-                          <th class="text-center fw-lighter text-white text-uppercase" scope="col">Note</th>
-                          <th class="text-center fw-lighter text-white text-uppercase" scope="col">Time</th>
-                        </tr>
-                      </thead>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="py-3 table-img"><img class="w-100" src="client/images/product-love-1.png"></td>
-                        <td class="py-3 text-center text-highline-2 fw-bold">3000k</td>
-                        <td class="py-3 text-center text-highline-2">Giao Hang som</td>
-                        <td class="py-3 text-center text-highline-2">11g20p</td>
-                      </tr>
-                      <tr>
-                        <td class="py-3 table-img"><img class="w-100" src="client/images/product-love-1.png"></td>
-                        <td class="py-3 text-center text-highline-2 fw-bold">3000k</td>
-                        <td class="py-3 text-center text-highline-2">Giao Hang som</td>
-                        <td class="py-3 text-center text-highline-2">11g20p</td>
-                      </tr>
-                      <tr>
-                        <td class="py-3 table-img"><img class="w-100" src="client/images/product-love-1.png"></td>
-                        <td class="py-3 text-center text-highline-2 fw-bold">3000k</td>
-                        <td class="py-3 text-center text-highline-2">Giao Hang som</td>
-                        <td class="py-3 text-center text-highline-2">11g20p</td>
-                      </tr>
-                      <tr>
-                        <td class="py-3 table-img"><img class="w-100" src="client/images/product-love-1.png"></td>
-                        <td class="py-3 text-center text-highline-2 fw-bold">3000k</td>
-                        <td class="py-3 text-center text-highline-2">Giao Hang som</td>
-                        <td class="py-3 text-center text-highline-2">11g20p</td>
-                      </tr>
-                    </tbody>
-                  </table>
+          <div class="mt-5">
+            <input class="border-0 border-bottom rounded me-5 py-3 mb-4" type="text" placeholder="Coupon Code">
+            <button class="btn border-secondary rounded-pill px-4 py-3 text-primary" type="button">Apply Coupon</button>
+          </div>
+          <div class="row g-4 justify-content-end">
+            <div class="col-8"></div>
+            <div class="col-sm-8 col-md-7 col-lg-6 col-xl-4">
+              <div class="bg-light rounded">
+                <div class="p-4">
+                  <h1 class="display-6 mb-4">Cart<span class="fw-normal">Total</span></h1>
+                  <div class="d-flex justify-content-between mb-4">
+                    <h5 class="mb-0 me-4">Subtotal:</h5>
+                    <p class="mb-0">$96.00</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="mb-0 me-4">Shipping</h5>
+                    <div>
+                      <p class="mb-0">Flat rate: $3.00</p>
+                    </div>
+                  </div>
+                  <p class="mb-0 text-end">Shipping to Ukraine.</p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="shoping-cart-btns d-flex justify-content-between"><a class="primary-btn cart-btn">Tiếp Tục Mua Hàng</a>
-                <button class="cart-update primary-btn p-3">Cập Nhật Đơn Hàng</button>
-              </div>
-            </div>
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6">
-              <div class="shoping-checkout">
-                <h5>Giá trị giỏ hàng</h5>
-                <ul>
-                  <!-- <li>Subtotal <span>$454.98</span></li>-->
-                  <li>Tổng cộng<span class="cart-subtotal">115.000k;</span></li>
-                </ul><a class="primary-btn" href="checkout.html">THANH TOÁN</a>
+                <div class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
+                  <h5 class="mb-0 ps-4 me-4">Total</h5>
+                  <p class="mb-0 pe-4">$99.00</p>
+                </div>
+                <button class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" type="button">Proceed Checkout</button>
               </div>
             </div>
           </div>

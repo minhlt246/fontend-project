@@ -123,6 +123,15 @@ button:focus:not(:focus-visible) {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
+.btn.border-secondary {
+  transition: 0.5s;
+}
+
+.btn.border-secondary:hover {
+  background: var(--bs-secondary) !important;
+  color: var(--bs-white) !important;
+}
 .form-control {
   display: block;
   width: 100%;
@@ -369,7 +378,6 @@ body {
   .table {
     --bs-body-bg: transparent;
     --bs-table-color: #FFFFFF;
-
   }
 }
 
@@ -861,44 +869,117 @@ section {
     }
 
     .product-item {
-      position: relative;
-      background: #FFFFFF;
-      border-radius: 16px;
-      margin-bottom: 30px;
-      box-shadow: 0px 0px 22px rgba(0, 0, 0, 0);
-      transition: box-shadow 0.3s ease-out, margin 0.6s ease-out;
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
-        .button-area {
-          display: block;
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      figure {
+        margin-bottom: 1rem;
+
+        a img {
+          border-radius: 10px;
+          object-fit: cover;
+          max-height: 200px;
+          transition: transform 0.3s ease;
         }
 
+        &:hover img {
+          transform: scale(1.05);
+        }
+      }
+
+      .product-details {
+        padding: 0.5rem 1rem;
+
+        .product-title {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333333;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .rating {
+          i {
+            font-size: 1rem;
+          }
+
+          .rating-count {
+            font-size: 0.875rem;
+            color: #6c757d;
+          }
+        }
+
+        .price-info {
+          del.old-price {
+            font-size: 0.9rem;
+            color: #999999;
+          }
+
+          .new-price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #28a745;
+          }
+
+          .discount-badge {
+            font-size: 0.75rem;
+            background-color: #dc3545;
+            color: #ffffff;
+            padding: 2px 6px;
+            border-radius: 5px;
+          }
+        }
       }
 
       .button-area {
-        display: none;
-        position: absolute;
-        text-align: center;
-        background: #fff;
-        width: 100%;
-        left: 0;
-        bottom: -60px;
-        z-index: 1;
-        box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.08);
-        border: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
 
-        .btn-cart {
-          text-wrap: nowrap;
-          height: 3.3em;
-          line-height: 2em;
-          width: 100%;
+        .quantity-input {
+          width: 60px;
+          text-align: center;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 5px;
+          font-size: 1rem;
         }
 
-        .quantity {
+        .add-to-cart-btn {
+          flex-grow: 1;
+          background-color: #007bff;
+          color: #ffffff;
+          font-weight: bold;
           padding: 0.5rem;
+          text-align: center;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+
+        .wishlist-btn {
+          padding: 0.5rem;
+          color: #6c757d;
+          border-radius: 5px;
+
+          &:hover {
+            color: #ff5722;
+          }
         }
       }
     }
+
+
 
   }
 
@@ -1282,93 +1363,122 @@ section {
 
 
   .register {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f7fa;
 
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .register-card {
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
 
-    .register-form {
-      height: 100%;
-      display: flex;
-      justify-content: center;
+    .bg-register-image {
+      background: url('path/to/your-image.jpg') no-repeat center center;
+      background-size: cover;
+    }
 
-      @include media(sm, md) {
-        width: 100%;
-        display: block;
+    .form-section {
+      padding: 40px;
+      background-color: #ffffff;
+
+      .welcome-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 20px;
       }
 
-      .login-main {
-        @include media(sm, md) {
-          height: 100px;
-        }
-      }
+      .registration-form {
+        .form-group {
+          margin-bottom: 20px;
 
-      @include media(sm, md) {
-        padding: 10px;
-      }
+          input {
+            padding: 12px 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            transition: border-color 0.3s, box-shadow 0.3s;
 
-      .form {
-        background: #F5F0F0;
-        border-radius: 15px;
-        padding: 30px;
+            &:focus {
+              border-color: #3498db;
+              box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+              outline: none;
+            }
 
-        .form-title {
-          font-size: 50px;
-          text-transform: uppercase;
-          @include sm {
-            font-size: 26px;
+            &::placeholder {
+              color: #b0b0b0;
+            }
           }
         }
 
-        .form-text {
-          text-align: center;
-          font-size: 15px;
+        .register-btn {
+          background-color: #3498db;
           color: #ffffff;
-        }
+          padding: 12px;
+          font-weight: 600;
+          border-radius: 8px;
+          transition: background-color 0.3s;
 
-        .input-group {
-          .input-group-text {
-            border-radius: 5px;
-            border: none;
-            background: #ffffff;
-            color: #333333;
-          }
-
-          .form-control {
-            border-radius: 5px;
-            border: none;
-            background: #ffffff;
-            color: #333333;
+          &:hover {
+            background-color: #217dbb;
           }
         }
-      }
-    }
 
-    .form-check-label {
-      color: #ffffff;
-    }
+        .divider {
+          margin: 20px 0;
+          border-color: #e0e0e0;
+        }
 
-    .text-decoration-underline {
-      color: #ffffff;
-      text-decoration: underline;
-      cursor: pointer;
-    }
+        .social-login-buttons {
+          a {
 
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: background-color 0.3s;
 
-    .btn-cancel {
-      background-color: #493830;
-      color: #ffffff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+            i {
+              margin-right: 8px;
+            }
 
-      &:hover {
-        background-color: #5a6268;
+            &.google-btn {
+              background-color: #db4437;
+
+              &:hover {
+                background-color: #c23321;
+              }
+            }
+
+            &.facebook-btn {
+              background-color: #4267b2;
+
+              &:hover {
+                background-color: #365899;
+              }
+            }
+          }
+        }
+
+        .forgot-password-link,
+        .login-link {
+          font-size: 14px;
+          color: #3498db;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
+
 
   .check-out {
     .checkout-form {

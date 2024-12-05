@@ -3,72 +3,40 @@ extends _layouts/master
 block content
     section
         .register
-            .register-form.align-items-center.d-flex.w-100.h-100
-                .register-main.py-5
-                    form.form.p-4
-                        .mb-2.fw-bold.form-title.text-center Dang ki
-                        .form-text.text-center.mb-3.text-danger We'll never share your information with anyone else.
-
-                        .input-group.mb-3
-                            input.form-control(type='text' placeholder='Your First Name' aria-label='First Name' required='')
-                        .input-group.mb-3
-                            input.form-control(type='text' placeholder='Your Last Name' aria-label='Last Name' required='')
-
-                        .input-group.mb-3
-                            span.input-group-text
-                                i.fa-solid.fa-user
-                            input.form-control(type='text' placeholder='Your Username' aria-label='Username' required='')
-
-                        .input-group.mb-3
-                            select#inputGroupSelect01.form-select.form-control
-                                option(selected='') United  Started (US)
-                                option(value='1') England (UK)
-                                option(value='2') VieNam (VN)
-                                option(value='3') THAILAND (TH)
-
-                        .input-group.mb-3
-                            select#inputGroupSelect02.form-select.form-control
-                                option(selected='') Armed  Forces  (AA)
-                                option(value='1') England (UK)
-                                option(value='2') VieNam (VN)
-                                option(value='3') THAILAND (TH)
-
-                        .input-group.mb-3
-                            span.input-group-text
-                                i.fa-solid.fa-envelope
-                            input#exampleInputEmail1.form-control(type='email' placeholder='Your Email Address' aria-describedby='emailHelp' required='')
-
-                        .input-group.mb-3
-                            span.input-group-text
-                                i.fa-solid.fa-lock
-                            input.form-control(type='password' placeholder='Password' aria-label='Password' required='')
-                            span.input-group-text
-                                button.btn.p-0.border-0(type='button')
-                                    i.fa-regular.fa-eye
-
-                        .input-group.mb-3
-                            span.input-group-text
-                                i.fa-solid.fa-lock
-                            input.form-control(type='password' placeholder='Confirm Password' aria-label='Confirm Password' required='')
-                            span.input-group-text
-                                button.btn.p-0.border-0(type='button')
-                                    i.fa-regular.fa-eye
-
-                        .mb-3.form-check.text-start.fs-5
-                            input#terms.form-check-input(type='checkbox' required='')
-                            label.form-check-label(for='terms').fs-5
-                                | I agree to the
-                                a.text-decoration-underline.px-3(href='#') terms and conditions
-
-                        .mb-3.form-check.text-start
-                            input#newsletter.form-check-input(type='checkbox')
-                            label.form-check-label.fs-5(for='newsletter') Subscribe to our newsletter
-
-                        .mb-3.form-check.text-start
-                            input#updates.form-check-input(type='checkbox')
-                            label.form-check-label.fs-5.text-start(for='updates') Receive updates via email
-
-
-                        .d-flex.justify-content-between
-                            button.btn.btn-cancel(type='button') Cancel
-                            button.btn.btn-start(type='submit') Register
+            .container
+                .card.o-hidden.border-0.shadow-lg.my-5.register-card
+                    .card-body.p-0
+                        .row
+                            .col-lg-5.d-none.d-lg-block
+                                img.w-100.h-100(src='./client/images/logo.png')
+                            .col-lg-7
+                                .p-5.form-section
+                                    .text-center
+                                        h1.h4.text-gray-900.mb-4.welcome-title ĐĂng Kí
+                                    form.user.registration-form
+                                        .form-group.row
+                                            .col-sm-6.mb-3.mb-sm-0
+                                                input#exampleFirstName.form-control.form-control-user.first-name-input(type='text' placeholder='First Name')
+                                            .col-sm-6
+                                                input#exampleLastName.form-control.form-control-user.last-name-input(type='text' placeholder='Last Name')
+                                        .form-group
+                                            input#exampleInputEmail.form-control.form-control-user.email-input(type='email' placeholder='Email Address')
+                                        .form-group.row
+                                            .col-sm-6.mb-3.mb-sm-0
+                                                input#exampleInputPassword.form-control.form-control-user.password-input(type='password' placeholder='Password')
+                                            .col-sm-6
+                                                input#exampleRepeatPassword.form-control.form-control-user.repeat-password-input(type='password' placeholder='Repeat Password')
+                                        a.btn.btn-primary.btn-user.btn-block.register-btn.w-100(href='login.html') Register Account
+                                        hr.divider
+                                        .social-login-buttons.d-flex.justify-content-between
+                                            a.btn.btn-google.btn-user.btn-block.google-btn(href='index.html')
+                                                i.fab.fa-google.fa-fw
+                                                | Register with Google
+                                            a.btn.btn-facebook.btn-user.btn-block.facebook-btn(href='index.html')
+                                                i.fab.fa-facebook-f.fa-fw
+                                                | Register with Facebook
+                                    hr.divider
+                                    .text-center
+                                        a.small.forgot-password-link(href='forgot-password.html') Forgot Password?
+                                    .text-center
+                                        a.small.login-link(href='login.html') Already have an account? Login!

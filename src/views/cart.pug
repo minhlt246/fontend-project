@@ -3,52 +3,105 @@ extends _layouts/master
 block content
     section
         .cart.my-lg-4
-            .container
-                ol.breadcrumb.py-4.fs-6
-                    li.breadcrumb-item
-                        a(href='#') Home
-                    li.breadcrumb-item
-                        a(href='#') Điền thông tin
-                    li.breadcrumb-item
-                        a(href='#') Xác nhận
-                    li.breadcrumb-item.active.css-ilends(aria-current='page')
-                        p Hoàn tất đơn hàng
-                .checkout-form
-                    h4.mb-3 Chi Tiết Giỏ Hàng
+            .container.py-5
+                .table-responsive
+                    table.table
+                        thead
+                            tr.text-black
+                                th(scope='col') Products
+                                th(scope='col') Name
+                                th(scope='col') Price
+                                th(scope='col') Quantity
+                                th(scope='col') Total
+                                th(scope='col') Handle
+                        tbody
+                            tr
+                                th(scope='row')
+                                    .d-flex.align-items-center
+                                        img.img-fluid.me-5.rounded-circle(src='img/vegetable-item-3.png' style='width: 80px; height: 80px;' alt='')
+                                td
+                                    p.mb-0.mt-4 Big Banana
+                                td
+                                    p.mb-0.mt-4 2.99 $
+                                td
+                                    .input-group.quantity.mt-4(style='width: 100px;')
+                                        .input-group-btn
+                                            button.btn.btn-sm.btn-minus.rounded-circle.bg-light.border
+                                                i.fa.fa-minus
+                                        input.form-control.form-control-sm.text-center.border-0(type='text' value='1')
+                                        .input-group-btn
+                                            button.btn.btn-sm.btn-plus.rounded-circle.bg-light.border
+                                                i.fa.fa-plus
+                                td
+                                    p.mb-0.mt-4 2.99 $
+                                td
+                                    button.btn.btn-md.rounded-circle.bg-light.border.mt-4
+                                        i.fa.fa-times.text-danger
+                            tr
+                                th(scope='row')
+                                    .d-flex.align-items-center
+                                        img.img-fluid.me-5.rounded-circle(src='img/vegetable-item-5.jpg' style='width: 80px; height: 80px;' alt='')
+                                td
+                                    p.mb-0.mt-4 Potatoes
+                                td
+                                    p.mb-0.mt-4 2.99 $
+                                td
+                                    .input-group.quantity.mt-4(style='width: 100px;')
+                                        .input-group-btn
+                                            button.btn.btn-sm.btn-minus.rounded-circle.bg-light.border
+                                                i.fa.fa-minus
+                                        input.form-control.form-control-sm.text-center.border-0(type='text' value='1')
+                                        .input-group-btn
+                                            button.btn.btn-sm.btn-plus.rounded-circle.bg-light.border
+                                                i.fa.fa-plus
+                                td
+                                    p.mb-0.mt-4 2.99 $
+                                td
+                                    button.btn.btn-md.rounded-circle.bg-light.border.mt-4
+                                        i.fa.fa-times.text-danger
+                            tr
+                                th(scope='row')
+                                    .d-flex.align-items-center
+                                        img.img-fluid.me-5.rounded-circle(src='img/vegetable-item-2.jpg' style='width: 80px; height: 80px;' alt='')
+                                td
+                                    p.mb-0.mt-4 Awesome Brocoli
+                                td
+                                    p.mb-0.mt-4 2.99 $
+                                td
+                                    .input-group.quantity.mt-4(style='width: 100px;')
+                                        .input-group-btn
+                                            button.btn.btn-sm.btn-minus.rounded-circle.bg-light.border
+                                                i.fa.fa-minus
+                                        input.form-control.form-control-sm.text-center.border-0(type='text' value='1')
+                                        .input-group-btn
+                                            button.btn.btn-sm.btn-plus.rounded-circle.bg-light.border
+                                                i.fa.fa-plus
+                                td
+                                    p.mb-0.mt-4 2.99 $
+                                td
+                                    button.btn.btn-md.rounded-circle.bg-light.border.mt-4
+                                        i.fa.fa-times.text-danger
+                .mt-5
+                    input.border-0.border-bottom.rounded.me-5.py-3.mb-4(type='text' placeholder='Coupon Code')
+                    button.btn.border-secondary.rounded-pill.px-4.py-3.text-primary(type='button') Apply Coupon
+                .row.g-4.justify-content-end
+                    .col-8
+                    .col-sm-8.col-md-7.col-lg-6.col-xl-4
+                        .bg-light.rounded
+                            .p-4
+                                h1.display-6.mb-4
+                                    | Cart
+                                    span.fw-normal Total
+                                .d-flex.justify-content-between.mb-4
+                                    h5.mb-0.me-4 Subtotal:
+                                    p.mb-0 $96.00
+                                .d-flex.justify-content-between
+                                    h5.mb-0.me-4 Shipping
+                                    div
+                                        p.mb-0 Flat rate: $3.00
+                                p.mb-0.text-end Shipping to Ukraine.
+                            .py-4.mb-4.border-top.border-bottom.d-flex.justify-content-between
+                                h5.mb-0.ps-4.me-4 Total
+                                p.mb-0.pe-4 $99.00
+                            button.btn.border-secondary.rounded-pill.px-4.py-3.text-primary.text-uppercase.mb-4.ms-4(type='button') Proceed Checkout
 
-                .row
-                    .col-lg-12
-                        .shoping-cart-table.mb-5.rounded-4.p-3.bg-box
-                            .table-responsive
-                                table.table.mb-0.table-borderless
-                                    thead
-                                        thead
-                                            tr
-                                                th(scope='col').fw-lighter.text-white.text-uppercase BTN
-                                                th(scope='col').text-center.fw-lighter.text-white.text-uppercase Amount
-                                                th(scope='col').text-center.fw-lighter.text-white.text-uppercase Note
-                                                th(scope='col').text-center.fw-lighter.text-white.text-uppercase Time
-                                    tbody
-                                        - for (var i = 0; i < 4; i++)
-                                            tr
-                                                td.py-3.table-img
-                                                    img.w-100(src='client/images/product-love-1.png')
-                                                td.py-3.text-center.text-highline-2.fw-bold 3000k
-                                                td.py-3.text-center.text-highline-2 Giao Hang som
-                                                td.py-3.text-center.text-highline-2 11g20p
-                .row
-                    .col-lg-12
-                        .shoping-cart-btns.d-flex.justify-content-between
-                            a.primary-btn.cart-btn Tiếp Tục Mua Hàng
-                            button.cart-update.primary-btn.p-3
-                                | Cập Nhật Đơn Hàng
-                    .col-lg-6
-                    .col-lg-6
-                        .shoping-checkout
-                            h5 Giá trị giỏ hàng
-                            ul
-                                // <li>Subtotal <span>$454.98</span></li>
-                                li
-                                    | Tổng cộng
-                                    span.cart-subtotal 115.000k;
-                            a.primary-btn(href='checkout.html') THANH TOÁN

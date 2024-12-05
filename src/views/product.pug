@@ -50,205 +50,108 @@ block content
                     .row
                         .tab-content.my-3
                             #referral.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
-                                .row.row-cols-2.row-cols-lg-5.g-2.g-lg-3
+                                .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col.p-3
-                                                .product-item
-                                                    figure
-                                                        a(href='' title='Product Title')
-                                                            img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                    .d-flex.flex-column.text-center
-                                                        h3.fs-6.fw-normal Whole Grain Oatmeal
-                                                        div
-                                                            span.rating.d-flex.justify-content-center
-                                                                .text-warning(width='18' height='18')
-                                                                    i.fa-solid.fa-star
-                                                                .text-warning(width='18' height='18')
-                                                                    i.fa-solid.fa-star
-                                                                .text-warning(width='18' height='18')
-                                                                    i.fa-solid.fa-star
-                                                                .text-warning(width='18' height='18')
-                                                                    i.fa-solid.fa-star
-                                                                .text-warning(width='18' height='18')
-                                                                    i.fa-solid.fa-star
-                                                            span (41)
-                                                        .d-flex.justify-content-center.align-items-center.gap-2
-                                                            del $54.00
-                                                            span.text-dark.fw-semibold $50.00
-                                                            span.badge.border.border-dark-subtle.rounded-0.fw-normal.px-1.fs-7.lh-1.text-body-tertiary 10% OFF
-                                                        .button-area
-                                                            .row.g-1.mt-2
-                                                                .col-3
-                                                                    input.form-controll.btn-outline-dark.rounded-1.p-3.fs-6(type='number' name='quantity' value='1')
+                                        .col-md-6.col-lg-4.col-xl-3
+                                            .rounded.position-relative.fruite-item
+                                                .fruite-img
+                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
+                                                    h4 Grapes
+                                                    p
+                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                    .d-flex.justify-content-between.flex-lg-wrap
+                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
+                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
+                                                            i.fa.fa-shopping-bag.me-2.text-primary
+                                                            |  Add to cart
 
-                                                                .col-7
-                                                                    a.btn.btn-primari.rounded-1.p-2.fs-7.btn-cart(href='#')
-                                                                        |  Add to Cart
-                                                                .col-2
-                                                                    a.btn.btn-outline-dark.rounded-1.p-3.fs-6(href='#')
-                                                                        i.fa-solid.fa-heart
+
                                 .col-12.text-center.py-4
                                     a.btn.btn-primari.py-2.px-4(href='') Load More Products
 
                             #account.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
-                                .row.row-cols-2.row-cols-lg-5.g-2.g-lg-3
+                                .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col.p-3
-                                            .product-item
-                                                figure
-                                                    a(href='' title='Product Title')
-                                                        img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                .d-flex.flex-column.text-center
-                                                    h3.fs-6.fw-normal Whole Grain Oatmeal
-                                                    div
-                                                        span.rating.d-flex.justify-content-center
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                        span (41)
-                                                    .d-flex.justify-content-center.align-items-center.gap-2
-                                                        del $54.00
-                                                        span.text-dark.fw-semibold $50.00
-                                                        span.badge.border.border-dark-subtle.rounded-0.fw-normal.px-1.fs-7.lh-1.text-body-tertiary 10% OFF
-                                                    .button-area
-                                                        .row.g-1.mt-2
-                                                            .col-3
-                                                                input.form-controll.border-dark-subtle.input-number.quantity(type='number' name='quantity' value='1')
+                                            .col-md-6.col-lg-4.col-xl-3
+                                                .rounded.position-relative.fruite-item
+                                                    .fruite-img
+                                                        img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                                    .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                                    .p-4.border.border-secondary.border-top-0.rounded-bottom
+                                                        h4 Grapes
+                                                        p
+                                                            | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                        .d-flex.justify-content-between.flex-lg-wrap
+                                                            p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
+                                                            a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
+                                                                i.fa.fa-shopping-bag.me-2.text-primary
+                                                                |  Add to cart
 
-                                                            .col-7
-                                                                a.btn.btn-primari.rounded-1.p-2.fs-7.btn-cart(href='#')
-                                                                    |  Add to Cart
-                                                            .col-2
-                                                                a.btn.btn-outline-dark.rounded-1.p-2.fs-6(href='#')
-                                                                    i.fa-solid.fa-heart
+
                                 .col-12.text-center
                                     a.btn.btn-primari.py-2.px-4(href='') Load More Products
 
                             #transaction.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
-                                .row.row-cols-2.row-cols-lg-5.g-2.g-lg-3
+                                .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col.p-3
-                                            .product-item
-                                                figure
-                                                    a(href='' title='Product Title')
-                                                        img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                .d-flex.flex-column.text-center
-                                                    h3.fs-6.fw-normal Whole Grain Oatmeal
-                                                    div
-                                                        span.rating.d-flex.justify-content-center
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                        span (41)
-                                                    .d-flex.justify-content-center.align-items-center.gap-2
-                                                        del $54.00
-                                                        span.text-dark.fw-semibold $50.00
-                                                        span.badge.border.border-dark-subtle.rounded-0.fw-normal.px-1.fs-7.lh-1.text-body-tertiary 10% OFF
-                                                    .button-area
-                                                        .row.g-1.mt-2
-                                                            .col-3
-                                                                input.form-controll.border-dark-subtle.input-number.quantity(type='number' name='quantity' value='1')
+                                        .col-md-6.col-lg-4.col-xl-3
+                                            .rounded.position-relative.fruite-item
+                                                .fruite-img
+                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
+                                                    h4 Grapes
+                                                    p
+                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                    .d-flex.justify-content-between.flex-lg-wrap
+                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
+                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
+                                                            i.fa.fa-shopping-bag.me-2.text-primary
+                                                            |  Add to cart
 
-                                                            .col-7
-                                                                a.btn.btn-primari.rounded-1.p-2.fs-7.btn-cart(href='#')
-                                                                    |  Add to Cart
-                                                            .col-2
-                                                                a.btn.btn-outline-dark.rounded-1.p-2.fs-6(href='#')
-                                                                    i.fa-solid.fa-heart
+
                                 .col-12.text-center
                                     a.btn.btn-primari.py-2.px-4(href='') Load More Products
                             #level.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
-                                .row.row-cols-2.row-cols-lg-5.g-2.g-lg-3
+                                .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col.p-3
-                                            .product-item
-                                                figure
-                                                    a(href='' title='Product Title')
-                                                        img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                .d-flex.flex-column.text-center
-                                                    h3.fs-6.fw-normal Whole Grain Oatmeal
-                                                    div
-                                                        span.rating.d-flex.justify-content-center
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                        span (41)
-                                                    .d-flex.justify-content-center.align-items-center.gap-2
-                                                        del $54.00
-                                                        span.text-dark.fw-semibold $50.00
-                                                        span.badge.border.border-dark-subtle.rounded-0.fw-normal.px-1.fs-7.lh-1.text-body-tertiary 10% OFF
-                                                    .button-area
-                                                        .row.g-1.mt-2
-                                                            .col-3
-                                                                input.form-controll.border-dark-subtle.input-number.quantity(type='number' name='quantity' value='1')
+                                        .col-md-6.col-lg-4.col-xl-3
+                                            .rounded.position-relative.fruite-item
+                                                .fruite-img
+                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
+                                                    h4 Grapes
+                                                    p
+                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                    .d-flex.justify-content-between.flex-lg-wrap
+                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
+                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
+                                                            i.fa.fa-shopping-bag.me-2.text-primary
+                                                            |  Add to cart
 
-                                                            .col-7
-                                                                a.btn.btn-primari.rounded-1.p-2.fs-7.btn-cart(href='#')
-                                                                    |  Add to Cart
-                                                            .col-2
-                                                                a.btn.btn-outline-dark.rounded-1.p-2.fs-6(href='#')
-                                                                    i.fa-solid.fa-heart
+
                                 .col-12.text-center
                                     a.btn.btn-primari.py-2.px-4(href='') Load More Products
                             #matching.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
-                                .row.row-cols-2.row-cols-lg-5.g-2.g-lg-3
+                                .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col.p-3
-                                            .product-item
-                                                figure
-                                                    a(href='' title='Product Title')
-                                                        img.card-img-topimg.w-100(src="client/images/featured/feature-" + i + ".jpeg")
-                                                .d-flex.flex-column.text-center
-                                                    h3.fs-6.fw-normal Whole Grain Oatmeal
-                                                    div
-                                                        span.rating.d-flex.justify-content-center
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                            .text-warning(width='18' height='18')
-                                                                i.fa-solid.fa-star
-                                                        span (41)
-                                                    .d-flex.justify-content-center.align-items-center.gap-2
-                                                        del $54.00
-                                                        span.text-dark.fw-semibold $50.00
-                                                        span.badge.border.border-dark-subtle.rounded-0.fw-normal.px-1.fs-7.lh-1.text-body-tertiary 10% OFF
-                                                    .button-area
-                                                        .row.g-1.mt-2
-                                                            .col-3
-                                                                input.form-controll.border-dark-subtle.input-number.quantity(type='number' name='quantity' value='1')
-
-                                                            .col-7
-                                                                a.btn.btn-primari.rounded-1.p-2.fs-7.btn-cart(href='#')
-                                                                    |  Add to Cart
-                                                            .col-2
-                                                                a.btn.btn-outline-dark.rounded-1.p-2.fs-6(href='#')
-                                                                    i.fa-solid.fa-heart
+                                        .col-md-6.col-lg-4.col-xl-3
+                                            .rounded.position-relative.fruite-item
+                                                .fruite-img
+                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
+                                                    h4 Grapes
+                                                    p
+                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                    .d-flex.justify-content-between.flex-lg-wrap
+                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
+                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
+                                                            i.fa.fa-shopping-bag.me-2.text-primary
+                                                            |  Add to cart
 
 
                                 .col-12.text-center
