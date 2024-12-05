@@ -38,7 +38,7 @@ block content
                                 .card.product-card.hvr-float
                                     .card-body
                                         .card-img.justify-content-center.team-banner
-                                            img.product-img(src=`client/images/product-${i}.jpeg` alt="Product Image")
+                                            img.product-img(src="client/images/product-"+ i + ".jpeg" alt="Product Image")
 
                                         .mx-3.product-bg
                                             img.team-people(src='client/images/VietNam.png' alt="Country Flag")
@@ -89,7 +89,7 @@ block content
                                 .col-lg-3.col-md-4.col-sm-6
                                     .featured-item.mb-4
                                         .featured-item-pic.set-bg(data-setbg)
-                                            img.w-100(src="client/images/featured/feature-"+ i + ".jpeg")
+                                            img.w-100(src="client/images/featured/feature-"+ i + ".jpg")
                                             ul.featured-item-pic-hover
                                                 li.featured-item-list
                                                     a(href='#')
@@ -187,46 +187,5 @@ block content
                                                                 | does not work well anymore.
                                                             .text-center
                                                                 small December 29, 2022
-        #shirt.shirt.my-5.pb-4
-                .shirt-new
-                    .container
-                        .wow.fadeInUp(data-wow-delay='0.3s' data-wow-duration='0.3s')
-                            .justify-content-center.my-5.w-100
-                                .text-center.justify-content-center.mb-2
-                                    .page-title
-                                        h1.text-center.service-title.text-uppercase.color-titlel Sản Phẩm Mới Trend
-                                        .fs-5.text-center.service-title.text-uppercase.text-while.justify-content-center
-                                            |   Meet of Professionals
-                        .row
-                            .col-sm-4.col-lg-4
-                                .shirt-new-product
-                                    a(href='').product-roll
-                                        img.shirt-img.w-100(data-sizes='auto' src='client/images/love-product-1.jpeg' data-src='' alt='Áo Sơ Mi' )
-                                .shirt-img-Home.align-items-center.text-start
-                                    h2
-                                        a(href='' target='_self')  Shirt
-                                    a.shirt-img-View.btn-buy(href='' target='_self')
-                                        | Xem
-                                        | Chi Tiet
-                            .col-sm-4.col-lg-4
-                                .shirt-new-product
-                                    a(href='').product-roll
-                                        img.shirt-img.w-100(data-sizes='auto' src='client/images/love-product-1.jpeg' data-src='' alt='Áo Sơ Mi' )
-                                .shirt-img-Home.align-items-center.text-start
-                                    h2
-                                        a(href='' target='_self')  Shirt
-                                    a.shirt-img-View.btn-buy(href='' target='_self')
-                                        | Xem
-                                        | Chi Tiet
 
-                            .col-sm-4.col-lg-4
-                                .shirt-new-product
-                                    .product-roll
-                                        img.shirt-img.w-100(data-sizes='auto' src='client/images/love-product-1.jpeg' data-src='' alt='Áo Sơ Mi' )
-                                .shirt-img-Home.align-items-center.text-start
-                                    h2
-                                        |  Shirt
-                                    a.shirt-img-View.btn-buy(href='' target='_self')
-                                        | Xem
-                                        | Chi Tiet
 

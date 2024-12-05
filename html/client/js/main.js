@@ -292,3 +292,19 @@ $.fn.extend({
 
 //Initialization of treeviews
 $('#tree1').treed();
+document.addEventListener("DOMContentLoaded", function () {
+  const radios = document.querySelectorAll("input[name='option-0']");
+  const priceDisplay = document.getElementById("product-price");
+
+  radios.forEach((radio) => {
+    radio.addEventListener("change", function () {
+      if (this.checked) {
+        const price = this.dataset.price; // Lấy giá trị từ data-price
+        priceDisplay.textContent = new Intl.NumberFormat("vi-VN", {
+          style: "currency",
+          currency: "VND",
+        }).format(price);
+      }
+    });
+  });
+});

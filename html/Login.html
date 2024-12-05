@@ -51,22 +51,42 @@
     </header>
     <section>
       <div class="login">
-        <div class="login-form py-4 align-items-center d-flex w-100 h-100">
-          <div class="login-main">
-            <form class="form p-4">
-              <h4 class="mb-0 fw-bold form-title text-center">Đăng nhập</h4>
-              <div class="mb-3 text-center text-danger">Nhập tài khoản và mật khẩu để đăng nhập hệ thống</div>
-              <label class="form-label">Email address</label>
-              <div class="input-group mb-3 input-group-lg"><span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                <input class="form-control" type="email" aria-describedby="emailHelp" placeholder="Your email">
+        <div class="container custom-login-container">
+          <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12 col-md-9 custom-card-wrapper">
+              <div class="card o-hidden border-0 shadow-lg my-5 custom-card">
+                <div class="card-body p-0">
+                  <div class="row custom-row">
+                    <div class="col-lg-6 d-lg-block"><img class="w-100 h-100" src="./client/images/logo.png"></div>
+                    <div class="col-lg-6">
+                      <div class="p-5 custom-form-container">
+                        <div class="text-center">
+                          <h1 class="h4 text-gray-900 mb-4 custom-welcome-title">Đăng Nhập </h1>
+                        </div>
+                        <form class="user custom-login-form">
+                          <div class="form-group custom-input-group">
+                            <input class="form-control form-control-user custom-input" id="exampleInputEmail" type="email" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                          </div>
+                          <div class="form-group custom-input-group">
+                            <input class="form-control form-control-user custom-input" id="exampleInputPassword" type="password" placeholder="Password">
+                          </div>
+                          <div class="form-group custom-checkbox-group">
+                            <div class="custom-control custom-checkbox small">
+                              <input id="customCheck">
+                              <label class="custom-control-label" for="customCheck">Remember Me</label>
+                            </div>
+                          </div><a class="btn btn-primary btn-user w-100 mt-3 py-3" href="index.html">Login</a>
+                          <div class="d-flex justify-content-between my-3"><a class="btn btn-google custom-google-btn text-white p-3" href="index.html"><i class="fab fa-google fa-fw"></i>Login with Google</a><a class="btn btn-facebook custom-facebook-btn text-white p-3" href="index.html"><i class="fab fa-facebook-f fa-fw"></i>Login with Facebook</a></div>
+                        </form>
+                        <hr>
+                        <div class="text-center"><a class="small custom-forgot-password" href="forgot-password.html">Forgot Password?</a></div>
+                        <div class="text-center"><a class="small custom-create-account" href="register.html">Create an Account!</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <label class="form-label">Password</label>
-              <div class="input-group mb-3 input-group-lg"><span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
-                <input class="form-control" type="password" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" required><span class="input-group-text px-0">
-                  <button class="btn px-2 border-0" type="button"><i class="fa-regular fa-eye fs-5"></i></button></span>
-              </div>
-              <div class="mb-3 form-check text-center"><a class="text-light text-decoration-underline" href="javascritp:void(0)">For Got Password?</a></div><a class="btn btn-start w-100" href=""> Sign in</a>
-            </form>
+            </div>
           </div>
         </div>
       </div>

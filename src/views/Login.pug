@@ -3,28 +3,39 @@ extends _layouts/master
 block content
     section
         .login
-            .login-form.py-4.align-items-center.d-flex.w-100.h-100
-                .login-main
-                    form.form.p-4
-                        h4.mb-0.fw-bold.form-title.text-center Đăng nhập
-                        .mb-3.text-center.text-danger Nhập tài khoản và mật khẩu để đăng nhập hệ thống
+            .container.custom-login-container
+                .row.justify-content-center
+                    .col-xl-10.col-lg-12.col-md-9.custom-card-wrapper
+                        .card.o-hidden.border-0.shadow-lg.my-5.custom-card
+                            .card-body.p-0
+                                .row.custom-row
+                                    .col-lg-6.d-lg-block
+                                        img.w-100.h-100(src='./client/images/logo.png')
+                                    .col-lg-6
+                                        .p-5.custom-form-container
+                                            .text-center
+                                                h1.h4.text-gray-900.mb-4.custom-welcome-title Đăng Nhập 
+                                            form.user.custom-login-form
+                                                .form-group.custom-input-group
+                                                    input#exampleInputEmail.form-control.form-control-user.custom-input(type='email' aria-describedby='emailHelp' placeholder='Enter Email Address...')
+                                                .form-group.custom-input-group
+                                                    input#exampleInputPassword.form-control.form-control-user.custom-input(type='password' placeholder='Password')
+                                                .form-group.custom-checkbox-group
+                                                    .custom-control.custom-checkbox.small
+                                                        input#customCheck
+                                                        label.custom-control-label(for='customCheck')
+                                                            | Remember Me
+                                                a.btn.btn-primary.btn-user.w-100.mt-3.py-3(href='index.html') Login
+                                                .d-flex.justify-content-between.my-3
+                                                    a.btn.btn-google.custom-google-btn.text-white.p-3(href='index.html')
+                                                        i.fab.fa-google.fa-fw
+                                                        | Login with Google
+                                                    a.btn.btn-facebook.custom-facebook-btn.text-white.p-3(href='index.html')
+                                                        i.fab.fa-facebook-f.fa-fw
+                                                        | Login with Facebook
+                                            hr
+                                            .text-center
+                                                a.small.custom-forgot-password(href='forgot-password.html') Forgot Password?
+                                            .text-center
+                                                a.small.custom-create-account(href='register.html') Create an Account!
 
-                        label.form-label Email address
-                        .input-group.mb-3.input-group-lg
-                            span.input-group-text
-                                i.fa-solid.fa-envelope
-                            input.form-control(type='email' aria-describedby='emailHelp' placeholder='Your email')
-
-                        label.form-label Password
-                        .input-group.mb-3.input-group-lg
-                            span.input-group-text
-                                i.fa-solid.fa-lock
-                            input.form-control(type='password' placeholder='Password' aria-label='Username' aria-describedby='basic-addon1' required)
-                            span.input-group-text.px-0
-                                button.btn.px-2.border-0(type='button')
-                                    i.fa-regular.fa-eye.fs-5
-
-                        .mb-3.form-check.text-center
-                            a.text-light.text-decoration-underline(href='javascritp:void(0)') For Got Password?
-                        a.btn.btn-start.w-100(href='')
-                            |  Sign in
