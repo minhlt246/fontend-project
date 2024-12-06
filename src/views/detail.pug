@@ -103,7 +103,7 @@ block content
                                                 button.btn_num.num_1.button.button_qty.bt-buy(onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) && qtypro > 1 ) result.value--;return false;" type='button') -
                                                 input#qtym.form-control.prd_quantity(type='text' name='quantity' value='1' maxlength='3' onkeypress='if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;' onchange='if(this.value == 0)this.value=1;')
                                                 button.btn_num.num_2.button.button_qty.bt-buy(onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type='button') +
-                                        .btn.btn-mua.btn-primari.mt-3.p-2.align-content-center.ms-3(type='submit')
+                                        a.btn.btn-mua.btn-primari.mt-3.p-2.align-content-center.ms-3(type='submit' href='cart.html')
                                             p.mb-0 Thêm Vào Giỏ Hàng
 
 
