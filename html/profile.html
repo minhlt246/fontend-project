@@ -50,37 +50,92 @@
       </nav>
     </header>
     <section>
-      <div class="container my-5">
-        <!-- Header thông tin người dùng-->
-        <div class="profile-header"><img class="profile-avatar" src="https://via.placeholder.com/80" alt="User Avatar">
-          <div class="profile-info">
-            <h2>Nguy&#x1EC5;n V&abreve;n A</h2>
-            <p class="profile-email">Email: nguyenvana@example.com</p>
-            <p class="profile-phone">S&#x1ED1; &dstrok;i&#x1EC7;n tho&#x1EA1;i: 0123456789</p>
+      <div class="profile">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="d-flex align-items-center mb-3">
+                <div class="profile-image bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3"><span class="fs-4">m</span></div>
+                <div>
+                  <h6 class="mb-0">USER NAME</h6><a class="text-decoration-none" href="#">Sửa Hồ Sơ</a>
+                </div>
+              </div>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a class="nav-link text-dark" href="#"><i class="bi bi-person"></i> Tài Khoản Của Tôi</a></li>
+                <li class="nav-item mb-2"><a class="nav-link active" href="#"><i class="bi bi-box"></i> Đơn Mua</a></li>
+                <li class="nav-item mb-2"><a class="nav-link text-dark" href="#"><i class="bi bi-bell"></i> Thông Báo</a></li>
+                <li class="nav-item mb-2"><a class="nav-link text-dark" href="#"><i class="bi bi-ticket"></i> Kho Voucher</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-10">
+              <div class="tab-pane fade w-100" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="1">
+                <ul class="nav nav-pills my-4 btn-class nav-justified rounded-4 profile-tags" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active fs-6 px-1 py-lg-3" data-bs-toggle="pill" data-bs-target="#referral" type="button" role="tab" aria-selected="true">Tất Cả</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fs-6 px-1 py-lg-3" data-bs-toggle="pill" data-bs-target="#account" type="button" role="tab" aria-selected="false" tabindex="-1">Chờ Thanh Toán</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fs-6 px-1 py-lg-3" data-bs-toggle="pill" data-bs-target="#transaction" type="button" role="tab" aria-selected="false" tabindex="-1">Vận Chuyển</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fs-6 px-1 py-lg-3" data-bs-toggle="pill" data-bs-target="#level" type="button" role="tab" aria-selected="false" tabindex="-1">Chờ Giao Hàng</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fs-6 px-1 py-lg-3" data-bs-toggle="pill" data-bs-target="#level" type="button" role="tab" aria-selected="false" tabindex="-1">Hoàn Thành</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fs-6 px-1 py-lg-3" data-bs-toggle="pill" data-bs-target="#level" type="button" role="tab" aria-selected="false" tabindex="-1">Đã Huỷ</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link fs-6 px-1 py-lg-3" data-bs-toggle="pill" data-bs-target="#level" type="button" role="tab" aria-selected="false" tabindex="-1">Bảo Hành</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content my-3">
+                <div class="tab-pane fade show active" id="referral" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="order mt-3 p-3 border rounded">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6 class="mb-0">Riêm Store Gia Dụng</h6>
+                      <button class="btn btn-outline-secondary btn-sm">Xem Shop</button>
+                    </div>
+                    <div class="d-flex mt-3"><img class="me-3" src="" alt="Product">
+                      <div>
+                        <h6 class="mb-1">Dao Cạo Râu Êm Ái 2 Lưỡi Thế Hệ Mới Kèm 36 Lưỡi Tặng 1 Lọ Kem RIEM</h6><small>Phân loại hàng: Bộ Dao Cạo Râu</small>
+                        <p class="text-danger mb-0">₫59.000</p>
+                      </div>
+                    </div>
+                    <div class="text-end mt-3">
+                      <button class="btn btn-danger">Liên Hệ Người Bán</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <div class="order mt-3 p-3 border rounded">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6 class="mb-0">Xưởng May Ngọc Linh</h6>
+                      <button class="btn btn-outline-secondary btn-sm">Xem Shop</button>
+                    </div>
+                    <div class="d-flex mt-3"><img class="me-3" src="https://via.placeholder.com/100" alt="Product">
+                      <div>
+                        <h6 class="mb-1">Quần Ống Rộng Xếp Ly Phong Cách Ulzzang Thanh Lịch Hợp Thời Trang Cho Nữ_911</h6><small>Phân loại hàng: Nâu, S</small>
+                        <p class="text-decoration-line-through mb-0">₫100.000</p>
+                        <p class="text-danger">₫75.000</p>
+                      </div>
+                    </div>
+                    <div class="text-end mt-3">
+                      <button class="btn btn-secondary">Đã Hủy</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="transaction" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0"></div>
+                <div class="tab-pane fade" id="level" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0"></div>
+                <div class="tab-pane fade" id="matching" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Danh sách đơn hàng-->
-        <h3 class="order-title">Danh s&aacute;ch &dstrok;&#x1A1;n h&agrave;ng</h3>
-        <ul class="order-list">
-          <!-- Đơn hàng 1-->
-          <li class="order-item">
-            <div class="order-details">
-              <p class="order-id"><strong>M&atilde; &dstrok;&#x1A1;n h&agrave;ng:</strong> #12345</p>
-              <p class="order-date"><strong>Ng&agrave;y &dstrok;&#x1EB7;t h&agrave;ng:</strong> 25/11/2024</p>
-              <p class="order-total"><strong>T&#x1ED5;ng ti&#x1EC1;n:</strong> 1,200,000 VND</p>
-            </div>
-            <div class="order-status"><span class="status-completed">Ho&agrave;n th&agrave;nh</span></div>
-          </li>
-          <!-- Đơn hàng 2-->
-          <li class="order-item">
-            <div class="order-details">
-              <p class="order-id"><strong>M&atilde; &dstrok;&#x1A1;n h&agrave;ng:</strong> #12346</p>
-              <p class="order-date"><strong>Ng&agrave;y &dstrok;&#x1EB7;t h&agrave;ng:</strong> 26/11/2024</p>
-              <p class="order-total"><strong>T&#x1ED5;ng ti&#x1EC1;n:</strong> 750,000 VND</p>
-            </div>
-            <div class="order-status"><span class="status-pending">&Dstrok;ang ch&#x1EDD; x&#x1EED; l&yacute;</span></div>
-          </li>
-        </ul>
       </div>
     </section>
     <footer>

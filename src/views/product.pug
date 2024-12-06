@@ -15,18 +15,18 @@ block content
                         p Hoàn tất đơn hàng
 
                 .tab-pane.fade.w-100(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='1')
-                        ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-tags(role='tablist')
-                            li.nav-item(role='presentation')
-                                button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#referral' type='button' role='tab' aria-selected='true') Nhẫn
-                            li.nav-item(role='presentation')
-                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Chuyền
-                            li.nav-item(role='presentation')
-                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#transaction' type='button' role='tab' aria-selected='false' tabindex='-1') Lắc Tay
-                            li.nav-item(role='presentation')
-                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#level' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Lưng
-                            li.nav-item(role='presentation')
-                                button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#matching' type='button' role='tab' aria-selected='false' tabindex='-1') Phụ Kiện
-                            
+                    ul.nav.nav-pills.my-4.btn-class.nav-justified.rounded-4.product-tags(role='tablist')
+                        li.nav-item(role='presentation')
+                            button.nav-link.py-lg-3.active(data-bs-toggle='pill' data-bs-target='#referral' type='button' role='tab' aria-selected='true') Nhẫn
+                        li.nav-item(role='presentation')
+                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#account' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Chuyền
+                        li.nav-item(role='presentation')
+                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#transaction' type='button' role='tab' aria-selected='false' tabindex='-1') Lắc Tay
+                        li.nav-item(role='presentation')
+                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#level' type='button' role='tab' aria-selected='false' tabindex='-1') Dây Lưng
+                        li.nav-item(role='presentation')
+                            button.nav-link.py-lg-3(data-bs-toggle='pill' data-bs-target='#matching' type='button' role='tab' aria-selected='false' tabindex='-1') Phụ Kiện
+
                 #carouselExampleIndicator.carousel.slide(data-bs-ride='carousel')
                     .carousel-indicators
                         button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
@@ -52,20 +52,20 @@ block content
                             #referral.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab' tabindex='0')
                                 .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col-md-6.col-lg-4.col-xl-3
-                                            .rounded.position-relative.fruite-item
-                                                .fruite-img
-                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
-                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
-                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
-                                                    h4 Grapes
-                                                    p
-                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                                    .d-flex.justify-content-between.flex-lg-wrap
-                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
-                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
-                                                            i.fa.fa-shopping-bag.me-2.text-primary
-                                                            |  Add to cart
+                                    .col-md-6.col-lg-4.col-xl-3
+                                        .rounded.position-relative.fruite-item
+                                            .fruite-img
+                                                img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                            .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                            .p-4.border-top-0.rounded-bottom.boder-line
+                                                h4 Áo Polo
+                                                p
+                                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                .d-flex.justify-content-between.flex-lg-wrap
+                                                    p.text-dark.fs-5.fw-bold.mb-0 $4.99
+                                                    a.btn.rounded-pill.px-3.btn-apply(href='#')
+                                                        i.fa.fa-shopping-bag.me-2
+                                                        |  Add to cart
 
 
                                 .col-12.text-center.py-4
@@ -74,20 +74,20 @@ block content
                             #account.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
                                 .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                            .col-md-6.col-lg-4.col-xl-3
-                                                .rounded.position-relative.fruite-item
-                                                    .fruite-img
-                                                        img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
-                                                    .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
-                                                    .p-4.border.border-secondary.border-top-0.rounded-bottom
-                                                        h4 Grapes
-                                                        p
-                                                            | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                                        .d-flex.justify-content-between.flex-lg-wrap
-                                                            p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
-                                                            a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
-                                                                i.fa.fa-shopping-bag.me-2.text-primary
-                                                                |  Add to cart
+                                    .col-md-6.col-lg-4.col-xl-3
+                                        .rounded.position-relative.fruite-item
+                                            .fruite-img
+                                                img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                            .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                            .p-4.boder-line.border-top-0.rounded-bottom
+                                                h4 Áo Polo
+                                                p
+                                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                .d-flex.justify-content-between.flex-lg-wrap
+                                                    p.text-dark.fs-5.fw-bold.mb-0 $4.99
+                                                    a.btn.rounded-pill.px-3.btn-apply(href='#')
+                                                        i.fa.fa-shopping-bag.me-2
+                                                        |  Add to cart
 
 
                                 .col-12.text-center
@@ -96,20 +96,20 @@ block content
                             #transaction.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
                                 .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col-md-6.col-lg-4.col-xl-3
-                                            .rounded.position-relative.fruite-item
-                                                .fruite-img
-                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
-                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
-                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
-                                                    h4 Grapes
-                                                    p
-                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                                    .d-flex.justify-content-between.flex-lg-wrap
-                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
-                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
-                                                            i.fa.fa-shopping-bag.me-2.text-primary
-                                                            |  Add to cart
+                                    .col-md-6.col-lg-4.col-xl-3
+                                        .rounded.position-relative.fruite-item
+                                            .fruite-img
+                                                img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                            .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                            .p-4.boder-line.border-top-0.rounded-bottom
+                                                h4 Áo Polo
+                                                p
+                                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                .d-flex.justify-content-between.flex-lg-wrap
+                                                    p.text-dark.fs-5.fw-bold.mb-0 $4.99
+                                                    a.btn.rounded-pill.px-3.btn-apply(href='#')
+                                                        i.fa.fa-shopping-bag.me-2
+                                                        |  Add to cart
 
 
                                 .col-12.text-center
@@ -117,20 +117,20 @@ block content
                             #level.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
                                 .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col-md-6.col-lg-4.col-xl-3
-                                            .rounded.position-relative.fruite-item
-                                                .fruite-img
-                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
-                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
-                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
-                                                    h4 Grapes
-                                                    p
-                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                                    .d-flex.justify-content-between.flex-lg-wrap
-                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
-                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
-                                                            i.fa.fa-shopping-bag.me-2.text-primary
-                                                            |  Add to cart
+                                    .col-md-6.col-lg-4.col-xl-3
+                                        .rounded.position-relative.fruite-item
+                                            .fruite-img
+                                                img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                            .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                            .p-4.boder-line.border-top-0.rounded-bottom
+                                                h4 Áo Polo
+                                                p
+                                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                .d-flex.justify-content-between.flex-lg-wrap
+                                                    p.text-dark.fs-5.fw-bold.mb-0 $4.99
+                                                    a.btn.rounded-pill.px-3.btn-apply(href='#')
+                                                        i.fa.fa-shopping-bag.me-2
+                                                        |  Add to cart
 
 
                                 .col-12.text-center
@@ -138,20 +138,20 @@ block content
                             #matching.tab-pane.fade(role='tabpanel' aria-labelledby='pills-contact-tab' tabindex='0')
                                 .row.g-4
                                     - for (var i = 0; i < 10; ++i)
-                                        .col-md-6.col-lg-4.col-xl-3
-                                            .rounded.position-relative.fruite-item
-                                                .fruite-img
-                                                    img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
-                                                .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
-                                                .p-4.border.border-secondary.border-top-0.rounded-bottom
-                                                    h4 Grapes
-                                                    p
-                                                        | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
-                                                    .d-flex.justify-content-between.flex-lg-wrap
-                                                        p.text-dark.fs-5.fw-bold.mb-0 $4.99 / kg
-                                                        a.btn.border.border-secondary.rounded-pill.px-3.text-primary(href='#')
-                                                            i.fa.fa-shopping-bag.me-2.text-primary
-                                                            |  Add to cart
+                                    .col-md-6.col-lg-4.col-xl-3
+                                        .rounded.position-relative.fruite-item
+                                            .fruite-img
+                                                img.img-fluid.w-100.rounded-top(src='client/images/blog/blog-1.jpg' alt='')
+                                            .text-white.bg-secondary.px-3.py-1.rounded.position-absolute(style='top: 10px; left: 10px;') Fruits
+                                            .p-4.boder-line.border-top-0.rounded-bottom
+                                                h4 Áo Polo
+                                                p
+                                                    | Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+                                                .d-flex.justify-content-between.flex-lg-wrap
+                                                    p.text-dark.fs-5.fw-bold.mb-0 $4.99
+                                                    a.btn.rounded-pill.px-3.btn-apply(href='#')
+                                                        i.fa.fa-shopping-bag.me-2
+                                                        |  Add to cart
 
 
                                 .col-12.text-center
