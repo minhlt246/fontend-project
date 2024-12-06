@@ -371,8 +371,13 @@ body {
 }
 .modal {
 }
-.bg-box{
-  background: #0F2034;
+.title {
+  background: #f37021;
+  background: linear-gradient(to right, #F37021 0%, #ECB500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  font-size: 40px;
+  font-weight: 700;
 }
 .table-responsive{
   .table {
@@ -380,7 +385,20 @@ body {
     --bs-table-color: #FFFFFF;
   }
 }
-
+.line-border{
+  border-top: 2px solid #81c408;
+  border-bottom:2px solid #81c408 ;
+}
+.btn-apply{
+  background-color: #fff;
+  color: #81c408;
+  border: 1px solid #ffb524;
+  &:hover{
+    background-color: #ffb524;
+    border: 1px solid #81c408 ;
+    color: #999999;
+  }
+}
 .btn-primarty{
   color: #000;
   background-color: #dab47a;
