@@ -22,6 +22,23 @@ button:focus:not(:focus-visible) {
   aspect-ratio: 1 / 1;
   height: 55px; }
 
+.carousel-control-next,
+.carousel-control-prev {
+  width: 60px;
+  height: 70px;
+  border-radius: 50px;
+  border: 1px solid var(--bs-white);
+  background: #7fad39;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.carousel-control-next {
+  margin-right: 20px; }
+
+.carousel-control-prev {
+  margin-left: 20px; }
+
 .fade:not(.show) {
   opacity: 1; }
 
