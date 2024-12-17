@@ -2,17 +2,17 @@ extends _layouts/master-vp
 
 block content
     section
-        .update-admin
+        .update-admin.px-3
             .container
-                .rounded.bg-info.my-3.bg-profile
+                .rounded.my-3.bg-profile
                     .row
-                        .col-md-3.border-right
+                        .col-md-5.border-right
                             .d-flex.flex-column.align-items-center.text-center.p-3.py-5
                                 img.rounded-circle.mt-5(width='150px' src='https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg')
                                 span.font-weight-bold Edogaru
                                 span.text-black edogaru@mail.com.my
                                 span
-                        .col-md-5.border-right
+                        .col-md-7.border-right
                             .p-3.py-5
                                 .d-flex.justify-content-between.align-items-center.mb-3
                                     h4.text-right Profile Settings
@@ -57,18 +57,4 @@ block content
                                         input.form-control(type='text' value='' placeholder='state')
                                 .mt-5.text-center
                                     button.btn.btn-primary.profile-button(type='button') Save Profile
-                        .col-md-4
-                            .p-3.py-5
-                                .d-flex.justify-content-between.align-items-center.experience.text-black
-                                    span Edit Experience
-                                    span.border.px-3.p-1.add-experience
-                                        i.fa.fa-plus
-                                        | &nbsp;Experience
-                                br
-                                .col-md-12
-                                    label.labels Experience in Designing
-                                    input.form-control(type='text' placeholder='experience' value='')
-                                br
-                                .col-md-12
-                                    label.labels Additional Details
-                                    input.form-control(type='text' placeholder='additional details' value='')
+

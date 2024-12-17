@@ -365,6 +365,14 @@ body {
 
 .offcanvas {
 }
+.text-clamp {
+  display: -webkit-box; /* Kích hoạt box model */
+  -webkit-box-orient: vertical; /* Cài đặt hướng */
+  -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+  overflow: hidden; /* Ẩn nội dung vượt quá */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." */
+  white-space: normal; /* Cho phép ngắt dòng */
+}
 
 .input-group {
   color: #607290;
@@ -2069,6 +2077,8 @@ section {
     }
 
     .update-admin {
+        background: url(../images/bg-profile.jpg) no-repeat center center;
+        background-size: cover;
       .form-control {
         // Cấu trúc chính
         display: block;
@@ -2130,7 +2140,6 @@ section {
           }
         }
       }
-
     }
   }
 }

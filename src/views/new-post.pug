@@ -17,20 +17,21 @@ block content
                 .row.gy-5
                     - for (var i = 0; i < 8; ++i)
                         .col-lg-4.col-md-6
-                            article.w-100
-                                .post-img.w-100
-                                    img.img-fluid.w-100(src='client/images/blog/blog-1.jpg' alt='')
-                                .meta-top
-                                    ul.p-0.text-start
-                                        li.d-flex.align-items-center
-                                            a.text-black(href='') Sorts
-                                        li.d-flex.align-items-center
-                                            i.bi.bi-dot
-                                            a.text-black(href='')
-                                                time(datetime='2022-01-01') Jan 1, 2024
-                                p.title.text-start.text-black.fs-4 Dolorum optio tempore voluptas dignissimos
+                            .border.border-light.border-1.rounded-3.hvr-float
+                                .w-100.p-2
+                                    .post-img.w-100
+                                        img.img-fluid.w-100.rounded-3(src='client/images/blog/blog-1.jpg' alt='')
+                                    .meta-top
+                                        ul.p-0.text-start
+                                            li.d-flex.align-items-center
+                                                a.text-black(href='') Sorts
+                                            li.d-flex.align-items-center
+                                                i.bi.bi-dot
+                                                a.text-black(href='')
+                                                    time(datetime='2022-01-01') Jan 1, 2024
+                                    p.title.text-start.text-black.fs-4.text-clamp  Dolorum optio tempore voluptas dignissimos tempore voluptas dignissimos
 
-                                .btn.btn-primari.p-3 READ MORE
+                                    .btn.btn-primari.p-3.hvr-float READ MORE
 
 
 

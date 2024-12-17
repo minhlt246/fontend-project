@@ -103,7 +103,7 @@ block content
                                                 button.btn_num.num_1.button.button_qty.bt-buy(onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) && qtypro > 1 ) result.value--;return false;" type='button') -
                                                 input#qtym.form-control.prd_quantity(type='text' name='quantity' value='1' maxlength='3' onkeypress='if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;' onchange='if(this.value == 0)this.value=1;')
                                                 button.btn_num.num_2.button.button_qty.bt-buy(onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type='button') +
-                                        a.btn.btn-mua.btn-primari.mt-3.p-2.align-content-center.ms-3(type='submit' href='cart.html')
+                                        a.btn.btn-mua.btn-primari.mt-3.p-2.align-content-center.ms-3.hvr-float(type='submit' href='cart.html')
                                             p.mb-0 Thêm Vào Giỏ Hàng
 
 
@@ -198,7 +198,7 @@ block content
                                                 span ★★★★☆
                                             .review-comment
                                                 p Sản phẩm rất đẹp và tinh xảo, nhưng tôi nghĩ có thể cải thiện thêm một chút về chi tiết.
-                                    button.btn.btn-primary.mt-3 Thêm Đánh Giá
+                                    button.btn.btn-primary.mt-3.btn-primari Thêm Đánh Giá
 
                         #account.tab-pane.fade(role='tabpanel' aria-labelledby='pills-profile-tab' tabindex='0')
                                 .warranty-info
